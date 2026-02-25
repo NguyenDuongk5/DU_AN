@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj": {}
+    "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj": {
+    "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\thain\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj": {
+    "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj",
+        "projectUniqueName": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj",
         "projectName": "SERVICE",
-        "projectPath": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj",
+        "projectPath": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj",
         "packagesPath": "C:\\Users\\thain\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\SERVICE\\obj\\",
+        "outputPath": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\SERVICE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -106,8 +106,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj"
+              "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj"
               }
             }
           }

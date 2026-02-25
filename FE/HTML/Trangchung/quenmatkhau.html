@@ -13,34 +13,26 @@
     <div class="doraemon-logo"></div>
     <h3>Quên mật khẩu</h3>
 
-    <form>
+    <form onsubmit="return false;">
+    <div class="mb-3 text-start">
+        <label class="form-label">Tên đăng nhập / Email</label>
+        <input type="text"
+               id="inputAccount"
+               class="form-control"
+               placeholder="Nhập tên đăng nhập hoặc email">
+    </div>
 
-        <div class="mb-3 text-start">
-            <label class="form-label">Tên đăng nhập / Email</label>
-            <input type="text"
-                   class="form-control"
-                   placeholder="Nhập tên đăng nhập hoặc email">
-        </div>
+    <!-- Thông báo -->
+    <div id="alertBox" class="alert d-none"></div>
 
-        <!-- Thông báo gợi ý mật khẩu (nội dung mẫu) -->
-         <div class="alert alert-success">
-            Gợi ý mật khẩu của bạn là: <strong>abc***</strong>
-        </div>   
-
-        <!-- Hoặc thông báo lỗi (nếu muốn dùng) -->
-        <!--
-        <div class="alert alert-danger">
-            Không tìm thấy tài khoản!
-        </div>
-        -->
-
-        <div class="d-grid">
-            <button type="button" class="btn btn-login">
-                Gợi ý mật khẩu
-            </button>
-        </div>
-    </form>
-
+    <div class="d-grid">
+        <button type="button"
+                class="btn btn-login"
+                onclick="goiYMatKhau()">
+            Gợi ý mật khẩu
+        </button>
+    </div>
+</form>
     <div class="signup mt-3">
         <a href="login.html">← Quay lại đăng nhập</a>
     </div>

@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\API",
+    "\\API\\API",
     "\\API\\DAL",
     "\\API\\DAL\\Base",
-    "\\API\\DAL\\Base\\IRepo",
     "\\API\\DAL\\Base\\Repo",
     "\\API\\SERVICE",
     "\\API\\SERVICE\\Base",
     "\\API\\SERVICE\\Base\\IService",
     "\\API\\SERVICE\\Base\\Service"
   ],
-  "SelectedNode": "\\API\\DAL\\Base\\Repo\\BaseRepo.cs",
+  "SelectedNode": "\\API\\API\\Program.cs",
   "PreviewInSolutionExplorer": true
 }

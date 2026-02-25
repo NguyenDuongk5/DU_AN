@@ -36,3 +36,28 @@ C:\Users\thain\Desktop\Mã nguồn mở\Mã nguồn mở\BE\API\DAL\obj\Debug\ne
 C:\Users\thain\Desktop\Mã nguồn mở\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\refint\DAL.dll
 C:\Users\thain\Desktop\Mã nguồn mở\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\DAL.pdb
 C:\Users\thain\Desktop\Mã nguồn mở\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\ref\DAL.dll
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\bin\Debug\net8.0\DAL.deps.json
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\bin\Debug\net8.0\DAL.dll
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\bin\Debug\net8.0\DAL.pdb
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\obj\Debug\net8.0\DAL.dll
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\obj\Debug\net8.0\refint\DAL.dll
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\obj\Debug\net8.0\DAL.pdb
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\DAL\obj\Debug\net8.0\ref\DAL.dll

@@ -25,4 +25,9 @@ namespace DAL.Entity.Users
         public string hoten { get; set; }
         public string email { get; set; }
     }
+    //thêm
+    public class StatusRequest
+    {
+        public int trang_thai { get; set; }
+    }
 }

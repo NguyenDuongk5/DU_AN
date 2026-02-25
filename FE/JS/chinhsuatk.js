@@ -15,9 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
     currentUser = data.user || data;
 
     // Hiển thị tên lên topbar
-    document.querySelector(".topbar div").innerHTML =
+    const topbar = document.querySelector(".topbar div");
+if (topbar) {
+    topbar.innerHTML =
         `<i class="bi bi-person-circle"></i> Xin chào, ${currentUser.hoten}`;
-
+}
     // Đổ dữ liệu vào input
     document.getElementById("fullName").value = currentUser.hoten || "";
     document.getElementById("email").value = currentUser.email || "";

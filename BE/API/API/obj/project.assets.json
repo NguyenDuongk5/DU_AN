@@ -1071,11 +1071,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\API\\API.csproj",
+      "projectPath": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\API\\API.csproj",
       "packagesPath": "C:\\Users\\thain\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\API\\obj\\",
+      "outputPath": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1096,8 +1096,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj": {
-              "projectPath": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj"
+            "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj": {
+              "projectPath": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj"
             }
           }
         }

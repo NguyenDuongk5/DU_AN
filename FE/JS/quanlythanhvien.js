@@ -48,32 +48,54 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 
+let projectOwnerId = null;
+let currentUserId = localStorage.getItem("currentUserId"); // hoặc lấy từ session
+
 async function loadProjectDetail(projectId) {
     try {
-        const res = await fetch(`http://localhost:6025/api/project/${projectId}`);
+        const res = await fetch(
+            `http://localhost:6025/api/project/${projectId}`
+        );
 
         if (!res.ok) {
             alert("Không lấy được dữ liệu dự án");
             return;
         }
-        
+
         const data = await res.json();
-        console.log("Project detail:", data);
 
         const p = Array.isArray(data) ? data[0] : data;
 
+        // Hiển thị thông tin dự án
         document.getElementById("tenDuAn").innerText = p.tieu_de;
         document.getElementById("nguoiTao").innerText = p.ten_nguoi_tao;
 
         document.getElementById("ngayTao").innerText =
             new Date(p.ngay_tao).toLocaleDateString("vi-VN");
 
+        // Tiêu đề topbar
         const topTitle = document.querySelector(".topbar b");
         if (topTitle) {
-            topTitle.innerText = "THÀNH VIÊN DỰ ÁN: " + p.tieu_de;
+            topTitle.innerText =
+                "BÀI VIẾT CỦA TÔI TRONG DỰ ÁN: " + p.tieu_de;
         }
 
-    } catch (err) {
+        // Lưu id chủ dự án
+        projectOwnerId = p.id_nguoi_tao;
+
+        // Xử lý sidebar
+        const linkDuyet = document.getElementById("linkDuyetBaiViet");
+
+        if (linkDuyet) {
+            if (currentUserId !== projectOwnerId) {
+                linkDuyet.style.display = "none";
+            } else {
+                linkDuyet.style.display = "block";
+            }
+        }
+
+    }
+    catch (err) {
         console.error(err);
         alert("Không thể kết nối server");
     }

@@ -1,6 +1,4 @@
-// ==========================
-// AUTH.JS - CLEAN VERSION
-// ==========================
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const loginBtn = document.querySelector(".btn-login");
@@ -11,9 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// ==========================
-// LOGIN
-// ==========================
 async function login() {
     const username = document.getElementById("tendangnhap").value.trim();
     const password = document.getElementById("password").value.trim();
@@ -60,9 +55,6 @@ async function login() {
 }
 
 
-// ==========================
-// REGISTER
-// ==========================
 async function registerUser(e) {
     e.preventDefault();
 
@@ -123,10 +115,77 @@ async function registerUser(e) {
     }
 }
 
+// QUÊN MẬT KHẨU - GỢI Ý MẬT KHẨU
+// hàm che mật khẩu
+function maskPassword(password) {
 
-// ==========================
-// PROTECT PAGE
-// ==========================
+    if (!password) return "";
+
+    const first3 = password.substring(0, 3);
+    const masked = "*".repeat(password.length - 3);
+
+    return first3 + masked;
+}
+async function goiYMatKhau() {
+
+    const input = document.getElementById("inputAccount").value.trim();
+    const alertBox = document.getElementById("alertBox");
+
+    if (!input) {
+        showAlert("Vui lòng nhập tên đăng nhập hoặc email!", "danger");
+        return;
+    }
+
+    try {
+
+        const res = await fetch("http://localhost:6025/api/users/all");
+
+        if (!res.ok) {
+            showAlert("Không thể kết nối server!", "danger");
+            return;
+        }
+
+        const users = await res.json();
+
+        // tìm user theo username hoặc email
+        const user = users.find(u =>
+            u.tendangnhap.toLowerCase() === input.toLowerCase() ||
+            u.email.toLowerCase() === input.toLowerCase()
+        );
+
+        if (!user) {
+            showAlert("Không tìm thấy tài khoản!", "danger");
+            return;
+        }
+
+        // hiển thị gợi ý mật khẩu
+        showAlert(
+            `Gợi ý mật khẩu của bạn là: <strong>${maskPassword(user.matkhau)}</strong>`,
+            "success"
+        );
+
+    } catch (error) {
+
+        console.error("Fetch error:", error);
+        showAlert("Có lỗi xảy ra!", "danger");
+
+    }
+}
+
+
+// ==============================
+// HIỂN THỊ ALERT
+// ==============================
+
+function showAlert(message, type) {
+
+    const alertBox = document.getElementById("alertBox");
+
+    alertBox.className = `alert alert-${type}`;
+    alertBox.innerHTML = message;
+    alertBox.classList.remove("d-none");
+
+}
 function protectPage() {
     const user = localStorage.getItem("currentUser");
     if (!user) {
@@ -134,17 +193,24 @@ function protectPage() {
     }
 }
 
+async function logout() {
+    const user = getCurrentUser(); 
+    const userId = user?.id_nguoi_dung;
 
-// ==========================
-// LOGOUT
-// ==========================
-function logout() {
+    if (userId) {
+        try {
+            await fetch(`http://localhost:6025/api/users/logout/${userId}`, { 
+                method: "POST" 
+            });
+        } catch (err) {
+            console.error("Lỗi ghi nhận nhật ký đăng xuất:", err);
+        }
+    }
+
     localStorage.removeItem("currentUser");
+    sessionStorage.clear();
     window.location.href = "/HTML/Trangchung/login.html";
 }
-// ==========================
-// GET CURRENT USER
-// ==========================
 function getCurrentUser() {
 
     const raw = localStorage.getItem("currentUser");
@@ -166,24 +232,17 @@ function getCurrentUser() {
 }
 
 
-// ==========================
-// CHECK ADMIN (ADMIN CỐ ĐỊNH)
-// ==========================
 function isAdmin() {
 
     const user = getCurrentUser();
 
     if (!user) return false;
 
-    // ID admin cố định của bạn
     return user.id_nguoi_dung === "11111111-1111-1121-1111-111111111111";
 
 }
 
 
-// ==========================
-// CHECK USER thường
-// ==========================
 function isUser() {
 
     const user = getCurrentUser();
@@ -198,7 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isAdmin()) {
 
         const sidebar = document.getElementById("sidebarMenu");
-
+        if (!sidebar) return;
         sidebar.innerHTML = `
             <a href="user.html">
                 <i class="bi bi-house-door"></i> Trang chủ
@@ -216,8 +275,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 <i class="bi bi-journal-text"></i> Nhật ký hoạt động
             </a>
 
-            <a href="../Admin/quanliphanquyen.html">
-                <i class="bi bi-shield-lock"></i> Quản lí phân quyền
+            <a href="../Admin/thongke.html">
+                <i class="bi bi-shield-lock"></i> Thống kê
             </a>
 
             <a href="../Admin/chinhsuatk.html">

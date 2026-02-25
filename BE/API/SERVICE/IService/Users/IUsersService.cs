@@ -22,5 +22,9 @@ namespace SERVICE.IService.Users
         Task<bool> ForgotPassword(ForgotPasswordRequest request);
         Task<UsersEntity> GetById(Guid id);
         Task<bool> ApproveMember(Guid idNguoiDung, Guid idDuAn);
+
+        // thêm
+        Task<bool> DeleteUser(Guid id);
+        Task<bool> UpdateStatus(Guid id, int status);
     }
 }

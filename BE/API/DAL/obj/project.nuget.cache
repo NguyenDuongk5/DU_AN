@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tQwwDpuGugE=",
+  "dgSpecHash": "EElg8FuvBOg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thain\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\thain\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7c21Gqgc0Yk=",
+  "dgSpecHash": "OHurNOHp6Uk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\thain\\Desktop\\Mã nguồn mở\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj",
+  "projectFilePath": "C:\\Users\\thain\\Downloads\\Mã nguồn mở\\BE\\API\\SERVICE\\SERVICE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thain\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\thain\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",

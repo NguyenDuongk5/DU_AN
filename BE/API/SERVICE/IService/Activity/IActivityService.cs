@@ -10,6 +10,6 @@ namespace SERVICE.IService.Activity
 {
     public interface IActivityService : IBaseService<ActivityEntity, ActivityDto>
     {
-
+        Task<List<UserActivityFullDto>> GetFilteredLogs(Guid? userId, DateTime? fromDate, DateTime? toDate);
     }
 }

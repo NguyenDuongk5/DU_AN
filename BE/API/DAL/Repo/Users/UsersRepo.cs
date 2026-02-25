@@ -178,5 +178,25 @@ namespace DAL.Repo.Users
 
             return rows > 0;
         }
+
+
+        // thêm
+        public async Task<bool> DeleteUser(Guid id)
+        {
+            using var conn = new MySqlConnection(_connectionString);
+            var sql = "DELETE FROM nguoi_dung WHERE id_nguoi_dung = @Id";
+            var result = await conn.ExecuteAsync(sql, new { Id = id });
+            return result > 0;
+        }
+
+        public async Task<bool> UpdateStatus(Guid id, int status)
+        {
+            using var conn = new MySqlConnection(_connectionString);
+            var sql = "UPDATE nguoi_dung SET trang_thai = @Status, ngay_cap_nhat = @Now WHERE id_nguoi_dung = @Id";
+            var result = await conn.ExecuteAsync(sql, new { Status = status, Id = id, Now = DateTime.Now });
+            return result > 0;
+        }
     }
+
+
 }

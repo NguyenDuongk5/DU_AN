@@ -45,3 +45,34 @@ C:\Users\thain\Desktop\Mã nguồn mở\Mã nguồn mở\BE\API\SERVICE\obj\Debu
 C:\Users\thain\Desktop\Mã nguồn mở\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\refint\SERVICE.dll
 C:\Users\thain\Desktop\Mã nguồn mở\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.pdb
 C:\Users\thain\Desktop\Mã nguồn mở\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\ref\SERVICE.dll
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\bin\Debug\net8.0\SERVICE.deps.json
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\bin\Debug\net8.0\SERVICE.dll
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\bin\Debug\net8.0\SERVICE.pdb
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\bin\Debug\net8.0\DAL.dll
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\bin\Debug\net8.0\DAL.pdb
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.csproj.AssemblyReference.cache
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.AssemblyInfoInputs.cache
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.AssemblyInfo.cs
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.csproj.CoreCompileInputs.cache
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.csproj.Up2Date
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.dll
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\obj\Debug\net8.0\refint\SERVICE.dll
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.pdb
+E:\Mã nguồn mở\MNM-main\MNM-main\BE\API\SERVICE\obj\Debug\net8.0\ref\SERVICE.dll
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\bin\Debug\net8.0\SERVICE.deps.json
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\bin\Debug\net8.0\SERVICE.dll
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\bin\Debug\net8.0\SERVICE.pdb
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\bin\Debug\net8.0\DAL.dll
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\bin\Debug\net8.0\DAL.pdb
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.csproj.AssemblyReference.cache
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.AssemblyInfoInputs.cache
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.AssemblyInfo.cs
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.csproj.CoreCompileInputs.cache
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.sourcelink.json
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.csproj.Up2Date
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.dll
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\refint\SERVICE.dll
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\SERVICE.pdb
+C:\Users\thain\Downloads\Mã nguồn mở\BE\API\SERVICE\obj\Debug\net8.0\ref\SERVICE.dll

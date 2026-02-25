@@ -20,5 +20,9 @@ namespace DAL.IRepo.Users
         Task<List<PostDto>> GetPostsByUserId(Guid userId);
         Task<bool> ApproveMember(Guid idNguoiDung, Guid idDuAn);
 
+        // thêm
+        Task<bool> DeleteUser(Guid id);
+        Task<bool> UpdateStatus(Guid id, int status);
+
     }
 }

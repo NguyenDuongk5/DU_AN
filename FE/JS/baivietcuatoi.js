@@ -266,8 +266,8 @@ function renderPosts() {
             ${
                 p.anh
                 ?
-                `<img src="../../Uploads/${p.anh}"
-                     class="img-fluid rounded mb-2">`
+                `<img src="http://localhost:6025/Uploads/${p.anh}"
+                    class="post-image mb-2" style="max-width: 300px">`
                 :
                 ""
             }
@@ -371,6 +371,87 @@ async function deletePost(postId) {
 
 }
 
+// async function submitEditPost()
+// {
+//     if (!CURRENT_POST)
+//     {
+//         alert("Không có bài viết");
+//         return;
+//     }
+
+//     const title =
+//         document.getElementById("editTitle").value;
+
+//     const content =
+//         document.getElementById("editContent").value;
+
+//     const fileInput =
+//         document.getElementById("editImage");
+
+//     let image =
+//         CURRENT_POST.anh; // giữ ảnh cũ
+
+//     // nếu chọn file mới
+//     if (fileInput.files.length > 0)
+//     {
+//         image =
+//             fileInput.files[0].name;
+//     }
+
+//     const payload =
+//     {
+//         tieu_de: title,
+//         noi_dung: content,
+//         anh: image,
+//         id_du_an: CURRENT_PROJECT_ID,
+//         id_tac_gia: CURRENT_USER_ID,
+//         trang_thai: CURRENT_POST.trang_thai,
+//         ngay_tao: CURRENT_POST.ngay_tao,
+//         ngay_cap_nhat: new Date().toISOString()
+//     };
+
+//     try
+//     {
+//         const res =
+//             await fetch(
+//                 `${API_POST}/${CURRENT_POST.id_bai_dang}`,
+//                 {
+//                     method: "PUT",
+//                     headers:
+//                     {
+//                         "Content-Type": "application/json"
+//                     },
+//                     body: JSON.stringify(payload)
+//                 }
+//             );
+
+//         if (res.ok)
+//         {
+//             alert("Cập nhật thành công");
+
+//             loadMyPosts();
+
+//             bootstrap.Modal.getInstance(
+//                 document.getElementById("editPostModal")
+//             ).hide();
+//         }
+//         else
+//         {
+//             const err =
+//                 await res.text();
+
+//             console.log(err);
+
+//             alert("Cập nhật thất bại");
+//         }
+//     }
+//     catch (err)
+//     {
+//         console.error(err);
+
+//         alert("Không thể kết nối server");
+//     }
+// }
 async function submitEditPost()
 {
     if (!CURRENT_POST)
@@ -389,39 +470,72 @@ async function submitEditPost()
         document.getElementById("editImage");
 
     let image =
-        CURRENT_POST.anh; // giữ ảnh cũ
+        CURRENT_POST.anh;
 
-    // nếu chọn file mới
+    // nếu có chọn ảnh mới → upload
     if (fileInput.files.length > 0)
     {
+        const formData =
+            new FormData();
+
+        formData.append(
+            "file",
+            fileInput.files[0]
+        );
+
+        const uploadRes =
+            await fetch(
+                "http://localhost:6025/api/upload",
+                {
+                    method: "POST",
+                    body: formData
+                }
+            );
+
+        const uploadData =
+            await uploadRes.json();
+
         image =
-            fileInput.files[0].name;
+            uploadData.fileName;
     }
 
     const payload =
     {
-        tieu_de: title,
-        noi_dung: content,
-        anh: image,
-        id_du_an: CURRENT_PROJECT_ID,
-        id_tac_gia: CURRENT_USER_ID,
-        trang_thai: CURRENT_POST.trang_thai,
-        ngay_tao: CURRENT_POST.ngay_tao,
-        ngay_cap_nhat: new Date().toISOString()
+        id_bai_dang:
+            CURRENT_POST.id_bai_dang,
+
+        tieu_de:
+            title,
+
+        noi_dung:
+            content,
+
+        anh:
+            image,
+
+        id_du_an:
+            CURRENT_POST.id_du_an,
+
+        id_tac_gia:
+            CURRENT_POST.id_tac_gia,
+
+        trang_thai:
+            CURRENT_POST.trang_thai
     };
 
     try
     {
         const res =
             await fetch(
-                `${API_POST}/${CURRENT_POST.id_bai_dang}`,
+                `http://localhost:6025/api/post/${CURRENT_POST.id_bai_dang}`,
                 {
                     method: "PUT",
                     headers:
                     {
                         "Content-Type": "application/json"
                     },
-                    body: JSON.stringify(payload)
+                    body:
+                        JSON.stringify(payload)
                 }
             );
 
@@ -437,19 +551,12 @@ async function submitEditPost()
         }
         else
         {
-            const err =
-                await res.text();
-
-            console.log(err);
-
             alert("Cập nhật thất bại");
         }
     }
     catch (err)
     {
         console.error(err);
-
         alert("Không thể kết nối server");
     }
 }
-

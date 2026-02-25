@@ -63,12 +63,8 @@
         <b>CHÀO MỪNG ĐẾN VỚI DỰ ÁN</b>
     </div>
 
-    <a href="../Trangchung/login.html"
-       class="btn btn-danger">
+        <button type="button" class="btn btn-danger" onclick="logout()">Đăng xuất</button>
 
-        Đăng xuất
-
-    </a>
 
 </div>
 
@@ -126,20 +122,6 @@
 <!-- ================= CONTENT ================= -->
 
 <div class="content-area p-4">
-
-
-    <!-- BUTTON CREATE -->
-
-    <button class="btn btn-primary mb-3"
-            data-bs-toggle="modal"
-            data-bs-target="#postModal">
-
-        <i class="bi bi-pencil-square"></i>
-        Tạo bài viết
-
-    </button>
-
-
     <!-- LIST POSTS -->
 
     <div id="content">
@@ -271,6 +253,7 @@
 
 
                 <input id="createImage"
+                       type="file"
                        class="form-control"
                        placeholder="Link ảnh">
 
@@ -325,6 +308,7 @@ document.querySelector(".menu-toggle").onclick = () => {
 
 <script src="../../JS/baivietcuatoi.js"></script>
 
+<script src="../../JS/admin.js"></script>
 
 </body>
 </html>

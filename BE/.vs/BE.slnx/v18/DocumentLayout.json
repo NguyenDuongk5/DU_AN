@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\",
+  "WorkspaceRootPath": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Base\\Service\\BaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\API.sln||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\API.sln||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\SERVICE\\Base\\Service\\BaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\SERVICE\\Base\\Service\\BaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Base\\IService\\IBaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\SERVICE\\Base\\IService\\IBaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\SERVICE\\Base\\IService\\IBaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\DAL\\Base\\Repo\\BaseRepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Base\\BaseController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\API\\Controllers\\Base\\BaseController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\API\\Controllers\\Base\\BaseController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,56 +57,70 @@
               "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "API.sln",
+              "DocumentMoniker": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\API.sln",
+              "RelativeDocumentMoniker": "API\\API.sln",
+              "ToolTip": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\API.sln",
+              "RelativeToolTip": "API\\API.sln",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002855|",
+              "WhenOpened": "2026-02-23T03:12:46.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BaseService.cs",
-              "DocumentMoniker": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Base\\Service\\BaseService.cs",
+              "DocumentMoniker": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\SERVICE\\Base\\Service\\BaseService.cs",
               "RelativeDocumentMoniker": "API\\SERVICE\\Base\\Service\\BaseService.cs",
-              "ToolTip": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Base\\Service\\BaseService.cs",
+              "ToolTip": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\SERVICE\\Base\\Service\\BaseService.cs",
               "RelativeToolTip": "API\\SERVICE\\Base\\Service\\BaseService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-28T07:27:24.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IBaseService.cs",
-              "DocumentMoniker": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Base\\IService\\IBaseService.cs",
+              "DocumentMoniker": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\SERVICE\\Base\\IService\\IBaseService.cs",
               "RelativeDocumentMoniker": "API\\SERVICE\\Base\\IService\\IBaseService.cs",
-              "ToolTip": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Base\\IService\\IBaseService.cs",
+              "ToolTip": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\SERVICE\\Base\\IService\\IBaseService.cs",
               "RelativeToolTip": "API\\SERVICE\\Base\\IService\\IBaseService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T07:27:19.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BaseRepo.cs",
-              "DocumentMoniker": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs",
-              "RelativeDocumentMoniker": "API\\DAL\\Base\\Repo\\BaseRepo.cs",
-              "ToolTip": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs",
-              "RelativeToolTip": "API\\DAL\\Base\\Repo\\BaseRepo.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T07:27:07.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T07:27:19.729Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "BaseRepo.cs",
+              "DocumentMoniker": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs",
+              "RelativeDocumentMoniker": "API\\DAL\\Base\\Repo\\BaseRepo.cs",
+              "ToolTip": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs",
+              "RelativeToolTip": "API\\DAL\\Base\\Repo\\BaseRepo.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T07:27:07.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BaseController.cs",
-              "DocumentMoniker": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Base\\BaseController.cs",
+              "DocumentMoniker": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\API\\Controllers\\Base\\BaseController.cs",
               "RelativeDocumentMoniker": "API\\API\\Controllers\\Base\\BaseController.cs",
-              "ToolTip": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Base\\BaseController.cs",
+              "ToolTip": "E:\\M\u00E3 ngu\u1ED3n m\u1EDF\\MNM-main\\MNM-main\\BE\\API\\API\\Controllers\\Base\\BaseController.cs",
               "RelativeToolTip": "API\\API\\Controllers\\Base\\BaseController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T07:26:49.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T07:26:49.768Z"
             }
           ]
         },

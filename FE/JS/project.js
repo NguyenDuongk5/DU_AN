@@ -3,19 +3,49 @@ let currentIndex = 0;
 const PAGE_SIZE = 4;
 let isLoadingMore = false;
 let joinedProjectsMap = new Map();
+let selectedColor = null; 
 // key = projectId
 // value = trang_thai (0 hoặc 1)
-function isAdmin() {
+function getCurrentUser() {
 
     const raw = localStorage.getItem("currentUser");
 
-    if (!raw) return false;
+    if (!raw) return null;
 
-    const data = JSON.parse(raw);
-    const user = data.user || data;
+    try {
 
-    // giả sử vai_tro = 1 là ADMIN
-    return user.trang_thai === 2;
+        const data = JSON.parse(raw);
+
+        return data.user || data;
+
+    } catch {
+
+        return null;
+
+    }
+
+}
+function isAdmin() {
+
+    const user = getCurrentUser();
+
+    if (!user) return false;
+
+    // ID admin cố định của bạn
+    return user.id_nguoi_dung === "11111111-1111-1121-1111-111111111111";
+
+}
+
+// ==========================
+// CHECK USER thường
+// ==========================
+function isUser() {
+
+    const user = getCurrentUser();
+
+    if (!user) return false;
+
+    return !isAdmin();
 
 }
 document.addEventListener("DOMContentLoaded", () => {

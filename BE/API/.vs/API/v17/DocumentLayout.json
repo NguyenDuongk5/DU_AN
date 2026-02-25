@@ -1,153 +1,161 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\",
+  "WorkspaceRootPath": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\iservice\\post\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservice\\post\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\activity\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\activity\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\service\\post\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\service\\post\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\irepo\\project\\iprojectrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\irepo\\project\\iprojectrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\project\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\project\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\comment\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\comment\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\service\\project\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\service\\project\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\project\\projectrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\project\\projectrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\service\\users\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\service\\users\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\users\\usersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\users\\usersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\users\\userauthdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\users\\userauthdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\users\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\users\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\users\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\users\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\users\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\users\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\users\\userprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\users\\userprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\project\\projectmemberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\project\\projectmemberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\post\\postrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\post\\postrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\iservice\\users\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservice\\users\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\irepo\\users\\iusersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\irepo\\users\\iusersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\irepo\\post\\ipostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\irepo\\post\\ipostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\post\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\post\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\project\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\project\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\project\\joinprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\project\\joinprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\post\\entity\\postentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\post\\entity\\postentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\iservice\\project\\iprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservice\\project\\iprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\post\\dto\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\post\\dto\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\service\\comment\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\service\\comment\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\iservice\\comment\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservice\\comment\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\irepo\\comment\\icommentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\irepo\\comment\\icommentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\comment\\commentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\comment\\commentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\base\\irepo\\ibaserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\base\\irepo\\ibaserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\comment\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\comment\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\comment\\commententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\comment\\commententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\base\\repo\\baserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\base\\repo\\baserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\base\\repo\\baserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\activity\\activityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\iservice\\post\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservice\\post\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\service\\post\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\service\\post\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\irepo\\project\\iprojectrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\irepo\\project\\iprojectrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\project\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\project\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\comment\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\comment\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\service\\project\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\service\\project\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\project\\projectrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\project\\projectrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\service\\users\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\service\\users\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\users\\usersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\users\\usersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\users\\userauthdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\users\\userauthdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\users\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\users\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\users\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\users\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\users\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\users\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\users\\userprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\users\\userprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\project\\projectmemberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\project\\projectmemberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\post\\postrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\post\\postrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\iservice\\users\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservice\\users\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\irepo\\users\\iusersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\irepo\\users\\iusersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\irepo\\post\\ipostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\irepo\\post\\ipostrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\post\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\post\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\project\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\project\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\project\\joinprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\project\\joinprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\post\\entity\\postentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\post\\entity\\postentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\iservice\\project\\iprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservice\\project\\iprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\post\\dto\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\post\\dto\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\service\\comment\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\service\\comment\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\iservice\\comment\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservice\\comment\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\irepo\\comment\\icommentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\irepo\\comment\\icommentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\comment\\commentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\comment\\commentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\base\\irepo\\ibaserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\base\\irepo\\ibaserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\comment\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\comment\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\comment\\commententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\comment\\commententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\activity\\activityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\activity\\activityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\desktop\\m\u00E3 ngu\u1ED3n m\u1EDF\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\project\\projectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\project\\projectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\project\\projectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -158,7 +166,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -186,11 +194,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "ActivityController.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Activity\\ActivityController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\Activity\\ActivityController.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Activity\\ActivityController.cs",
+              "RelativeToolTip": "API\\Controllers\\Activity\\ActivityController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T02:18:13.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAAJYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T20:34:21.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Base\\BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Base\\BaseController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Base\\BaseController.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Base\\BaseController.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Base\\BaseController.cs",
               "RelativeToolTip": "API\\Controllers\\Base\\BaseController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAA6wDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -198,11 +232,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "UserAuthDto.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UserAuthDto.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UserAuthDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Users\\UserAuthDto.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UserAuthDto.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UserAuthDto.cs",
               "RelativeToolTip": "DAL\\Entity\\Users\\UserAuthDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -210,11 +244,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "UsersDto.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UsersDto.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UsersDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Users\\UsersDto.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UsersDto.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UsersDto.cs",
               "RelativeToolTip": "DAL\\Entity\\Users\\UsersDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -222,11 +256,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Users\\AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Users\\AuthController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Users\\AuthController.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Users\\AuthController.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Users\\AuthController.cs",
               "RelativeToolTip": "API\\Controllers\\Users\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -234,11 +268,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "IUsersService.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Users\\IUsersService.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Users\\IUsersService.cs",
               "RelativeDocumentMoniker": "SERVICE\\IService\\Users\\IUsersService.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Users\\IUsersService.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Users\\IUsersService.cs",
               "RelativeToolTip": "SERVICE\\IService\\Users\\IUsersService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -246,11 +280,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Users\\UserService.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Users\\UserService.cs",
               "RelativeDocumentMoniker": "SERVICE\\Service\\Users\\UserService.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Users\\UserService.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Users\\UserService.cs",
               "RelativeToolTip": "SERVICE\\Service\\Users\\UserService.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -258,11 +292,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "IUsersRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Users\\IUsersRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Users\\IUsersRepo.cs",
               "RelativeDocumentMoniker": "DAL\\IRepo\\Users\\IUsersRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Users\\IUsersRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Users\\IUsersRepo.cs",
               "RelativeToolTip": "DAL\\IRepo\\Users\\IUsersRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -270,11 +304,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "UsersRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Users\\UsersRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Users\\UsersRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Users\\UsersRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Users\\UsersRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Users\\UsersRepo.cs",
               "RelativeToolTip": "DAL\\Repo\\Users\\UsersRepo.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAUwG4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -282,11 +316,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Users\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Users\\UsersController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Users\\UsersController.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Users\\UsersController.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Users\\UsersController.cs",
               "RelativeToolTip": "API\\Controllers\\Users\\UsersController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwCgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -294,24 +328,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "IPostService.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Post\\IPostService.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Post\\IPostService.cs",
               "RelativeDocumentMoniker": "SERVICE\\IService\\Post\\IPostService.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Post\\IPostService.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Post\\IPostService.cs",
               "RelativeToolTip": "SERVICE\\IService\\Post\\IPostService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T04:19:17.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T04:19:17.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "PostRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Post\\PostRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Post\\PostRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Post\\PostRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Post\\PostRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Post\\PostRepo.cs",
               "RelativeToolTip": "DAL\\Repo\\Post\\PostRepo.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAgwJsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -319,11 +352,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "IPostRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Post\\IPostRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Post\\IPostRepo.cs",
               "RelativeDocumentMoniker": "DAL\\IRepo\\Post\\IPostRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Post\\IPostRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Post\\IPostRepo.cs",
               "RelativeToolTip": "DAL\\IRepo\\Post\\IPostRepo.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAADgvxAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -331,11 +364,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "ProjectDto.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectDto.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Project\\ProjectDto.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectDto.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectDto.cs",
               "RelativeToolTip": "DAL\\Entity\\Project\\ProjectDto.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAgwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -343,11 +376,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "JoinProjectDto.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\JoinProjectDto.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\JoinProjectDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Project\\JoinProjectDto.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\JoinProjectDto.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\JoinProjectDto.cs",
               "RelativeToolTip": "DAL\\Entity\\Project\\JoinProjectDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -355,11 +388,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "UserProjectDto.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UserProjectDto.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UserProjectDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Users\\UserProjectDto.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UserProjectDto.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UserProjectDto.cs",
               "RelativeToolTip": "DAL\\Entity\\Users\\UserProjectDto.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -367,11 +400,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "ProjectMemberDto.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectMemberDto.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectMemberDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Project\\ProjectMemberDto.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectMemberDto.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectMemberDto.cs",
               "RelativeToolTip": "DAL\\Entity\\Project\\ProjectMemberDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -379,11 +412,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "PostDto.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Post\\Dto\\PostDto.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Post\\Dto\\PostDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Post\\Dto\\PostDto.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Post\\Dto\\PostDto.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Post\\Dto\\PostDto.cs",
               "RelativeToolTip": "DAL\\Entity\\Post\\Dto\\PostDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -391,11 +424,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PostService.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Post\\PostService.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Post\\PostService.cs",
               "RelativeDocumentMoniker": "SERVICE\\Service\\Post\\PostService.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Post\\PostService.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Post\\PostService.cs",
               "RelativeToolTip": "SERVICE\\Service\\Post\\PostService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -403,11 +436,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "PostController.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Post\\PostController.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Post\\PostController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Post\\PostController.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Post\\PostController.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Post\\PostController.cs",
               "RelativeToolTip": "API\\Controllers\\Post\\PostController.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAgwDQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -415,11 +448,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "ICommentService.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Comment\\ICommentService.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Comment\\ICommentService.cs",
               "RelativeDocumentMoniker": "SERVICE\\IService\\Comment\\ICommentService.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Comment\\ICommentService.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Comment\\ICommentService.cs",
               "RelativeToolTip": "SERVICE\\IService\\Comment\\ICommentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -427,11 +460,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "CommentService.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Comment\\CommentService.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Comment\\CommentService.cs",
               "RelativeDocumentMoniker": "SERVICE\\Service\\Comment\\CommentService.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Comment\\CommentService.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Comment\\CommentService.cs",
               "RelativeToolTip": "SERVICE\\Service\\Comment\\CommentService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -439,11 +472,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "ICommentRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Comment\\ICommentRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Comment\\ICommentRepo.cs",
               "RelativeDocumentMoniker": "DAL\\IRepo\\Comment\\ICommentRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Comment\\ICommentRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Comment\\ICommentRepo.cs",
               "RelativeToolTip": "DAL\\IRepo\\Comment\\ICommentRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -451,11 +484,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "CommentDto.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Comment\\CommentDto.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Comment\\CommentDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Comment\\CommentDto.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Comment\\CommentDto.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Comment\\CommentDto.cs",
               "RelativeToolTip": "DAL\\Entity\\Comment\\CommentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -463,11 +496,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "CommentEntity.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Comment\\CommentEntity.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Comment\\CommentEntity.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Comment\\CommentEntity.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Comment\\CommentEntity.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Comment\\CommentEntity.cs",
               "RelativeToolTip": "DAL\\Entity\\Comment\\CommentEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -475,11 +508,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "CommentRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Comment\\CommentRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Comment\\CommentRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Comment\\CommentRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Comment\\CommentRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Comment\\CommentRepo.cs",
               "RelativeToolTip": "DAL\\Repo\\Comment\\CommentRepo.cs",
               "ViewState": "AgIAAFgAAAAAAAAAAAAiwGgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -487,11 +520,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "ActivityRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Activity\\ActivityRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Activity\\ActivityRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Activity\\ActivityRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Activity\\ActivityRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Activity\\ActivityRepo.cs",
               "RelativeToolTip": "DAL\\Repo\\Activity\\ActivityRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -499,11 +532,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "PostEntity.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Post\\Entity\\PostEntity.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Post\\Entity\\PostEntity.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Post\\Entity\\PostEntity.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Post\\Entity\\PostEntity.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Post\\Entity\\PostEntity.cs",
               "RelativeToolTip": "DAL\\Entity\\Post\\Entity\\PostEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -511,11 +544,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Class1.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Class1.cs",
               "RelativeDocumentMoniker": "DAL\\Class1.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Class1.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Class1.cs",
               "RelativeToolTip": "DAL\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -523,11 +556,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "IBaseRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\IRepo\\IBaseRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\IRepo\\IBaseRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Base\\IRepo\\IBaseRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\IRepo\\IBaseRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\IRepo\\IBaseRepo.cs",
               "RelativeToolTip": "DAL\\Base\\IRepo\\IBaseRepo.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -535,23 +568,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 2,
               "Title": "BaseRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Base\\Repo\\BaseRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs",
               "RelativeToolTip": "DAL\\Base\\Repo\\BaseRepo.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAkwKMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-13T04:32:09.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "CommentController.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Comment\\CommentController.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Comment\\CommentController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Comment\\CommentController.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Comment\\CommentController.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Comment\\CommentController.cs",
               "RelativeToolTip": "API\\Controllers\\Comment\\CommentController.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAmwD0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -559,11 +592,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ProjectController.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Project\\ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Project\\ProjectController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Project\\ProjectController.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Project\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Project\\ProjectController.cs",
               "RelativeToolTip": "API\\Controllers\\Project\\ProjectController.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAAAEwF8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -571,11 +604,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "IProjectService.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Project\\IProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Project\\IProjectService.cs",
               "RelativeDocumentMoniker": "SERVICE\\IService\\Project\\IProjectService.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Project\\IProjectService.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Project\\IProjectService.cs",
               "RelativeToolTip": "SERVICE\\IService\\Project\\IProjectService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -583,11 +616,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ProjectService.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Project\\ProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Project\\ProjectService.cs",
               "RelativeDocumentMoniker": "SERVICE\\Service\\Project\\ProjectService.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Project\\ProjectService.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Project\\ProjectService.cs",
               "RelativeToolTip": "SERVICE\\Service\\Project\\ProjectService.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAmwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -595,11 +628,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "ProjectEntity.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectEntity.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectEntity.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Project\\ProjectEntity.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectEntity.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectEntity.cs",
               "RelativeToolTip": "DAL\\Entity\\Project\\ProjectEntity.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -607,11 +640,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ProjectRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Project\\ProjectRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Project\\ProjectRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Project\\ProjectRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Project\\ProjectRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Project\\ProjectRepo.cs",
               "RelativeToolTip": "DAL\\Repo\\Project\\ProjectRepo.cs",
               "ViewState": "AgIAAPsAAAAAAAAAAAA/wAcBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -619,11 +652,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "IProjectRepo.cs",
-              "DocumentMoniker": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Project\\IProjectRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Project\\IProjectRepo.cs",
               "RelativeDocumentMoniker": "DAL\\IRepo\\Project\\IProjectRepo.cs",
-              "ToolTip": "C:\\Users\\thain\\Desktop\\M\u00E3 ngu\u1ED3n m\u1EDF\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Project\\IProjectRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Project\\IProjectRepo.cs",
               "RelativeToolTip": "DAL\\IRepo\\Project\\IProjectRepo.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
