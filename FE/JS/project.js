@@ -4,8 +4,6 @@ const PAGE_SIZE = 4;
 let isLoadingMore = false;
 let joinedProjectsMap = new Map();
 let selectedColor = null; 
-// key = projectId
-// value = trang_thai (0 hoặc 1)
 function getCurrentUser() {
 
     const raw = localStorage.getItem("currentUser");
@@ -31,14 +29,11 @@ function isAdmin() {
 
     if (!user) return false;
 
-    // ID admin cố định của bạn
     return user.id_nguoi_dung === "11111111-1111-1121-1111-111111111111";
 
 }
 
-// ==========================
-// CHECK USER thường
-// ==========================
+
 function isUser() {
 
     const user = getCurrentUser();
@@ -87,7 +82,6 @@ async function loadUserProjects() {
     if (!Array.isArray(projects))
         projects = [projects];
 
-    // lưu cache trạng thái tham gia
     joinedProjectsMap.clear();
 
     projects.forEach(p => {
@@ -123,7 +117,6 @@ function renderProjects(projects, isHome = false) {
             new Date(p.ngay_tham_gia)
             .toLocaleDateString("vi-VN");
 
-        // badge trạng thái
         let statusBadge = "";
 
         container.innerHTML += `

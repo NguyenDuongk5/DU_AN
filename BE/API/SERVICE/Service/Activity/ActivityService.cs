@@ -19,9 +19,9 @@ namespace SERVICE.Service.Activity
             _repo = repo;
         }
 
-        public async Task<List<UserActivityFullDto>> GetFilteredLogs(Guid? userId, DateTime? fromDate, DateTime? toDate)
+        public async Task<List<UserActivityFullDto>> GetFilteredLogs(Guid? userId)
         {
-            return await _repo.GetLogsWithUserInfo(userId, fromDate, toDate);
+            return await _repo.GetLogsWithUserInfo(userId);
         }
     }
 }

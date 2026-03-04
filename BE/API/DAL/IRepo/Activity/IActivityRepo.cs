@@ -10,8 +10,8 @@ namespace DAL.IRepo.Activity
 {
     public interface IActivityRepo : IBaseRepo<ActivityEntity, ActivityDto>
     {
-        Task<List<UserActivityFullDto>> GetLogsWithUserInfo(Guid? userId, DateTime? fromDate, DateTime? toDate);
-        // Thêm hàm này
+        Task<List<UserActivityFullDto>> GetLogsWithUserInfo(Guid? userId);
+        
         Task<bool> InsertLog(Guid userId, string action);
     }
 }

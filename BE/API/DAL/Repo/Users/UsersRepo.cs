@@ -180,13 +180,48 @@ namespace DAL.Repo.Users
         }
 
 
+
         // thêm
         public async Task<bool> DeleteUser(Guid id)
         {
             using var conn = new MySqlConnection(_connectionString);
-            var sql = "DELETE FROM nguoi_dung WHERE id_nguoi_dung = @Id";
-            var result = await conn.ExecuteAsync(sql, new { Id = id });
-            return result > 0;
+            await conn.OpenAsync();
+            using var transaction = await conn.BeginTransactionAsync();
+
+            try
+            {
+                // 1. Xóa hành động và bình luận của người dùng này
+                await conn.ExecuteAsync("DELETE FROM hanh_dong_nguoi_dung WHERE id_nguoi_dung = @Id", new { Id = id }, transaction);
+                await conn.ExecuteAsync("DELETE FROM binh_luan WHERE id_nguoi_dung = @Id", new { Id = id }, transaction);
+
+                // 2. Xóa bài đăng của người dùng này
+                await conn.ExecuteAsync("DELETE FROM bai_dang WHERE id_tac_gia = @Id", new { Id = id }, transaction);
+
+                // 3. QUAN TRỌNG: Xóa tất cả thành viên trong các DỰ ÁN mà người này làm chủ sở hữu
+                var deleteMembersInOwnedProjectsSql = @"
+            DELETE FROM nguoi_dung_du_an 
+            WHERE id_du_an IN (SELECT id FROM du_an WHERE id_nguoi_tao = @Id)";
+                await conn.ExecuteAsync(deleteMembersInOwnedProjectsSql, new { Id = id }, transaction);
+
+                // 4. Xóa các liên kết tham gia dự án cá nhân của người này
+                await conn.ExecuteAsync("DELETE FROM nguoi_dung_du_an WHERE id_nguoi_dung = @Id", new { Id = id }, transaction);
+                await conn.ExecuteAsync("DELETE FROM thanh_vien_du_an WHERE id_nguoi_dung = @Id", new { Id = id }, transaction);
+
+                // 5. Bây giờ mới xóa được Dự án do người này tạo
+                await conn.ExecuteAsync("DELETE FROM du_an WHERE id_nguoi_tao = @Id", new { Id = id }, transaction);
+
+                // 6. Cuối cùng xóa Người dùng
+                var sql = "DELETE FROM nguoi_dung WHERE id_nguoi_dung = @Id";
+                var result = await conn.ExecuteAsync(sql, new { Id = id }, transaction);
+
+                await transaction.CommitAsync();
+                return result > 0;
+            }
+            catch (Exception ex)
+            {
+                await transaction.RollbackAsync();
+                throw new Exception($"Lỗi xóa hệ thống: {ex.Message}");
+            }
         }
 
         public async Task<bool> UpdateStatus(Guid id, int status)
@@ -196,6 +231,7 @@ namespace DAL.Repo.Users
             var result = await conn.ExecuteAsync(sql, new { Status = status, Id = id, Now = DateTime.Now });
             return result > 0;
         }
+       
     }
 
 

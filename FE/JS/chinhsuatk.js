@@ -14,19 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = JSON.parse(raw);
     currentUser = data.user || data;
 
-    // Hiển thị tên lên topbar
     const topbar = document.querySelector(".topbar div");
 if (topbar) {
     topbar.innerHTML =
         `<i class="bi bi-person-circle"></i> Xin chào, ${currentUser.hoten}`;
 }
-    // Đổ dữ liệu vào input
     document.getElementById("fullName").value = currentUser.hoten || "";
     document.getElementById("email").value = currentUser.email || "";
 });
 
 
-// ================= SAVE =================
 async function handleSave(e) {
     e.preventDefault();
 
@@ -62,13 +59,11 @@ async function handleSave(e) {
             return;
         }
 
-        // Cập nhật localStorage
         currentUser.hoten = fullName;
         currentUser.email = email;
         localStorage.setItem("currentUser", JSON.stringify(currentUser));
 
 
-        // ================= ĐỔI MẬT KHẨU =================
         if (currentPassword || newPassword || confirmPassword) {
 
             if (!currentPassword || !newPassword || !confirmPassword) {
@@ -116,7 +111,6 @@ async function handleSave(e) {
 }
 
 
-// ================= ALERT FUNCTION =================
 function showAlert(message, type) {
 
     const oldAlert = document.querySelector(".custom-alert");

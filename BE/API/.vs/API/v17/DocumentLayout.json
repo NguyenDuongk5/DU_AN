@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\users\\usersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\users\\usersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\activity\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\activity\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\service\\activity\\activityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\service\\activity\\activityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\iservice\\activity\\iactivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservice\\activity\\iactivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\irepo\\activity\\iactivityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\irepo\\activity\\iactivityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\activity\\activityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\activity\\activityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,14 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\service\\service\\users\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB234ED5-AD3E-4B21-9109-23D7E41C5149}|SERVICE\\SERVICE.csproj|solutionrelative:service\\service\\users\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\api\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A3AFF65-63CD-4DBD-9151-7B4E0B6BA494}|API\\API.csproj|solutionrelative:api\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\users\\usersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\users\\usersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\users\\userauthdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -151,10 +167,6 @@
       "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\comment\\commententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\repo\\activity\\activityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\activity\\activityrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|c:\\users\\thain\\downloads\\m\u00E3 ngu\u1ED3n m\u1EDF\\be\\api\\dal\\entity\\project\\projectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA6C338C-3E14-4D6F-81AC-5D172D76FE2B}|DAL\\DAL.csproj|solutionrelative:dal\\entity\\project\\projectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -166,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -194,20 +206,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "IActivityService.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Activity\\IActivityService.cs",
+              "RelativeDocumentMoniker": "SERVICE\\IService\\Activity\\IActivityService.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Activity\\IActivityService.cs",
+              "RelativeToolTip": "SERVICE\\IService\\Activity\\IActivityService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T03:34:51.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActivityService.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Activity\\ActivityService.cs",
+              "RelativeDocumentMoniker": "SERVICE\\Service\\Activity\\ActivityService.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Activity\\ActivityService.cs",
+              "RelativeToolTip": "SERVICE\\Service\\Activity\\ActivityService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwAwAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T03:34:27.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IActivityRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Activity\\IActivityRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\IRepo\\Activity\\IActivityRepo.cs",
+              "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Activity\\IActivityRepo.cs",
+              "RelativeToolTip": "DAL\\IRepo\\Activity\\IActivityRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T03:33:47.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ActivityController.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Activity\\ActivityController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Activity\\ActivityController.cs",
               "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Activity\\ActivityController.cs",
               "RelativeToolTip": "API\\Controllers\\Activity\\ActivityController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-25T02:18:13.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -215,24 +263,24 @@
               "RelativeToolTip": "API\\Program.cs",
               "ViewState": "AgIAAIYAAAAAAAAAAAAAAJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T20:34:21.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T20:34:21.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "BaseController.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Base\\BaseController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Base\\BaseController.cs",
               "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Base\\BaseController.cs",
               "RelativeToolTip": "API\\Controllers\\Base\\BaseController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA6wDYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T19:17:52.878Z"
+              "WhenOpened": "2026-02-21T19:17:52.878Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "UserAuthDto.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UserAuthDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Users\\UserAuthDto.cs",
@@ -244,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "UsersDto.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UsersDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Users\\UsersDto.cs",
@@ -256,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Users\\AuthController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Users\\AuthController.cs",
@@ -268,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "IUsersService.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Users\\IUsersService.cs",
               "RelativeDocumentMoniker": "SERVICE\\IService\\Users\\IUsersService.cs",
@@ -280,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Users\\UserService.cs",
               "RelativeDocumentMoniker": "SERVICE\\Service\\Users\\UserService.cs",
@@ -292,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "IUsersRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Users\\IUsersRepo.cs",
               "RelativeDocumentMoniker": "DAL\\IRepo\\Users\\IUsersRepo.cs",
@@ -304,19 +352,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "UsersRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Users\\UsersRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Users\\UsersRepo.cs",
               "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Users\\UsersRepo.cs",
               "RelativeToolTip": "DAL\\Repo\\Users\\UsersRepo.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAUwG4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T17:41:06.846Z"
+              "WhenOpened": "2026-02-17T17:41:06.846Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Users\\UsersController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Users\\UsersController.cs",
@@ -328,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "IPostService.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Post\\IPostService.cs",
               "RelativeDocumentMoniker": "SERVICE\\IService\\Post\\IPostService.cs",
@@ -340,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "PostRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Post\\PostRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Post\\PostRepo.cs",
@@ -352,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "IPostRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Post\\IPostRepo.cs",
               "RelativeDocumentMoniker": "DAL\\IRepo\\Post\\IPostRepo.cs",
@@ -364,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "ProjectDto.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Project\\ProjectDto.cs",
@@ -376,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "JoinProjectDto.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\JoinProjectDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Project\\JoinProjectDto.cs",
@@ -388,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "UserProjectDto.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Users\\UserProjectDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Users\\UserProjectDto.cs",
@@ -400,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "ProjectMemberDto.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectMemberDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Project\\ProjectMemberDto.cs",
@@ -412,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "PostDto.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Post\\Dto\\PostDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Post\\Dto\\PostDto.cs",
@@ -424,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "PostService.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Post\\PostService.cs",
               "RelativeDocumentMoniker": "SERVICE\\Service\\Post\\PostService.cs",
@@ -436,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "PostController.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Post\\PostController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Post\\PostController.cs",
@@ -448,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "ICommentService.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Comment\\ICommentService.cs",
               "RelativeDocumentMoniker": "SERVICE\\IService\\Comment\\ICommentService.cs",
@@ -460,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "CommentService.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Comment\\CommentService.cs",
               "RelativeDocumentMoniker": "SERVICE\\Service\\Comment\\CommentService.cs",
@@ -472,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "ICommentRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Comment\\ICommentRepo.cs",
               "RelativeDocumentMoniker": "DAL\\IRepo\\Comment\\ICommentRepo.cs",
@@ -484,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "CommentDto.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Comment\\CommentDto.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Comment\\CommentDto.cs",
@@ -496,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "CommentEntity.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Comment\\CommentEntity.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Comment\\CommentEntity.cs",
@@ -508,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "CommentRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Comment\\CommentRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Comment\\CommentRepo.cs",
@@ -520,19 +569,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 6,
               "Title": "ActivityRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Activity\\ActivityRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Activity\\ActivityRepo.cs",
               "ToolTip": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Activity\\ActivityRepo.cs",
               "RelativeToolTip": "DAL\\Repo\\Activity\\ActivityRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwAwAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-14T09:59:20.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "PostEntity.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Post\\Entity\\PostEntity.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Post\\Entity\\PostEntity.cs",
@@ -544,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Class1.cs",
               "RelativeDocumentMoniker": "DAL\\Class1.cs",
@@ -556,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "IBaseRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\IRepo\\IBaseRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Base\\IRepo\\IBaseRepo.cs",
@@ -568,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "BaseRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Base\\Repo\\BaseRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Base\\Repo\\BaseRepo.cs",
@@ -580,7 +629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "CommentController.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Comment\\CommentController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Comment\\CommentController.cs",
@@ -592,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "ProjectController.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\API\\Controllers\\Project\\ProjectController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\Project\\ProjectController.cs",
@@ -604,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "IProjectService.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\IService\\Project\\IProjectService.cs",
               "RelativeDocumentMoniker": "SERVICE\\IService\\Project\\IProjectService.cs",
@@ -616,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "ProjectService.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\SERVICE\\Service\\Project\\ProjectService.cs",
               "RelativeDocumentMoniker": "SERVICE\\Service\\Project\\ProjectService.cs",
@@ -628,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "ProjectEntity.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Entity\\Project\\ProjectEntity.cs",
               "RelativeDocumentMoniker": "DAL\\Entity\\Project\\ProjectEntity.cs",
@@ -640,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "ProjectRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\Repo\\Project\\ProjectRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Project\\ProjectRepo.cs",
@@ -652,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "IProjectRepo.cs",
               "DocumentMoniker": "C:\\Users\\thain\\Downloads\\M\u00E3 ngu\u1ED3n m\u1EDF\\BE\\API\\DAL\\IRepo\\Project\\IProjectRepo.cs",
               "RelativeDocumentMoniker": "DAL\\IRepo\\Project\\IProjectRepo.cs",

@@ -1,17 +1,12 @@
-// ==============================
-// INITIALIZATION & SIDEBAR
-// ==============================
+
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Cập nhật link sidebar dựa trên projectId (nếu có)
     const urlParams = new URLSearchParams(window.location.search);
     const projectId = urlParams.get('id') || "";
     bindAdminSidebar(projectId);
 
-    // 2. Tự động load dữ liệu dựa trên trang hiện tại
     if (document.getElementById("projectTableBody")) loadProjects();
     if (document.getElementById("userTableBody")) loadUsers();
     
-    // Logic cho trang Nhật ký
     if (document.getElementById("activityTableBody")) {
         loadUsersForSelect(); 
         loadActivities();     
@@ -34,9 +29,7 @@ function bindAdminSidebar(projectId) {
     }
 }
 
-// ==============================
-// QUẢN LÝ DỰ ÁN
-// ==============================
+
 async function loadProjects() {
     try {
         const res = await fetch("http://localhost:6025/api/project/all");
@@ -52,7 +45,6 @@ function renderProjects(list) {
     if (!tbody) return;
     tbody.innerHTML = list.map(p => `
         <tr>
-            <td>${p.id}</td>
             <td>${p.tieu_de}</td>
             <td>${p.mo_ta}</td>
             <td>${new Date(p.ngay_tao).toLocaleDateString("vi-VN")}</td>
@@ -76,9 +68,7 @@ async function adminDeleteProject(projectId) {
     } catch (err) { alert("Lỗi kết nối server"); }
 }
 
-// ==============================
-// QUẢN LÝ NGƯỜI DÙNG
-// ==============================
+
 async function loadUsers() {
     try {
         const res = await fetch("http://localhost:6025/api/users/all");
@@ -102,7 +92,6 @@ function renderUsers(list) {
 
         return `
         <tr>
-            <td>${u.id_nguoi_dung}</td>
             <td>${u.hoten}</td>
             <td>${u.tendangnhap}</td>
             <td>${u.email}</td>
@@ -136,12 +125,25 @@ async function adminToggleLock(userId, currentStatus) {
 
 async function adminDeleteUser(userId) {
     if (!confirm("Xóa người dùng này?")) return;
-    try {
-        const res = await fetch(`http://localhost:6025/api/users/${userId}`, { method: "DELETE" });
-        if (res.ok) { alert("Xóa thành công"); loadUsers(); }
-    } catch (err) { alert("Lỗi kết nối"); }
-}
 
+    try {
+        const res = await fetch(
+            `http://localhost:6025/api/users/delete-user/${userId}`,
+            { method: "DELETE" }
+        );
+
+        if (!res.ok) {
+            const errorText = await res.text();
+            alert("Lỗi: " + errorText);
+            return;
+        }
+
+        alert("Xóa thành công");
+        loadUsers();
+    } catch (err) {
+        alert("Lỗi kết nối: " + err.message);
+    }
+}
 async function loadUsersForSelect() {
     try {
         const res = await fetch("http://localhost:6025/api/users/all");
@@ -165,7 +167,6 @@ async function loadActivities() {
 
     let url = "http://localhost:6025/Activity/filter";
 
-    // chỉ thêm userId nếu có giá trị
     if (userId && userId.trim() !== "") {
         url += `?userId=${userId}`;
     }
@@ -202,19 +203,15 @@ function renderActivities(list) {
     }).join('');
 }
 
-// ==============================
-// LOGOUT (FIXED VERSION)
-// ==============================
+
 async function logout() {
     const raw = localStorage.getItem("currentUser");
     if (raw) {
         try {
             const data = JSON.parse(raw);
-            // Kiểm tra mọi cấp độ để lấy id_nguoi_dung
             const userId = data.id_nguoi_dung || (data.user && data.user.id_nguoi_dung);
 
             if (userId) {
-                // Gọi API logout trước khi xóa storage
                 await fetch(`http://localhost:6025/api/users/logout/${userId}`, { 
                     method: "POST" 
                 });

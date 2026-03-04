@@ -16,11 +16,11 @@ namespace API.Controllers.Activity
             _service = service;
         }
         [HttpGet("filter")]
-        public async Task<IActionResult> GetFiltered([FromQuery] Guid? userId, [FromQuery] DateTime? fromDate, [FromQuery] DateTime? toDate)
+        public async Task<IActionResult> GetFiltered([FromQuery] Guid? userId)
         {
             try
             {
-                var result = await _service.GetFilteredLogs(userId, fromDate, toDate);
+                var result = await _service.GetFilteredLogs(userId);
                 return Ok(result);
             }
             catch (Exception ex)

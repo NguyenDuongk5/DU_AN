@@ -13,7 +13,7 @@ namespace DAL.Repo.Activity
     public class ActivityRepo : BaseRepo<ActivityEntity, ActivityDto>, IActivityRepo
     {
         // Hàm lấy dữ liệu để hiển thị lên bảng (Có JOIN để lấy tên và email)
-        public async Task<List<UserActivityFullDto>> GetLogsWithUserInfo(Guid? userId, DateTime? fromDate, DateTime? toDate)
+        public async Task<List<UserActivityFullDto>> GetLogsWithUserInfo(Guid? userId)
         {
             using var conn = new MySqlConnection(_connectionString);
             var sql = @"
@@ -30,15 +30,9 @@ namespace DAL.Repo.Activity
             if (userId.HasValue && userId != Guid.Empty)
                 sql += " AND h.id_nguoi_dung = @UserId";
 
-            if (fromDate.HasValue)
-                sql += " AND h.thoi_gian >= @FromDate";
-
-            if (toDate.HasValue)
-                sql += " AND h.thoi_gian <= @ToDate";
-
             sql += " ORDER BY h.thoi_gian DESC";
 
-            var result = await conn.QueryAsync<UserActivityFullDto>(sql, new { UserId = userId, FromDate = fromDate, ToDate = toDate });
+            var result = await conn.QueryAsync<UserActivityFullDto>(sql, new { UserId = userId });
             return result.ToList();
         }
 

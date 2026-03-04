@@ -3,7 +3,7 @@ let CURRENT_USER_ID = null;
 let IS_OWNER = false;
 
 let projectId = null;
-let members = []; // danh sách tất cả thành viên
+let members = []; 
 function bindSidebar(projectId) {
 
     document.getElementById("linkTrangChu").href =
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 let projectOwnerId = null;
-let currentUserId = localStorage.getItem("currentUserId"); // hoặc lấy từ session
+let currentUserId = localStorage.getItem("currentUserId"); 
 
 async function loadProjectDetail(projectId) {
     try {
@@ -66,24 +66,20 @@ async function loadProjectDetail(projectId) {
 
         const p = Array.isArray(data) ? data[0] : data;
 
-        // Hiển thị thông tin dự án
         document.getElementById("tenDuAn").innerText = p.tieu_de;
         document.getElementById("nguoiTao").innerText = p.ten_nguoi_tao;
 
         document.getElementById("ngayTao").innerText =
             new Date(p.ngay_tao).toLocaleDateString("vi-VN");
 
-        // Tiêu đề topbar
         const topTitle = document.querySelector(".topbar b");
         if (topTitle) {
             topTitle.innerText =
                 "BÀI VIẾT CỦA TÔI TRONG DỰ ÁN: " + p.tieu_de;
         }
 
-        // Lưu id chủ dự án
         projectOwnerId = p.id_nguoi_tao;
 
-        // Xử lý sidebar
         const linkDuyet = document.getElementById("linkDuyetBaiViet");
 
         if (linkDuyet) {
@@ -124,7 +120,6 @@ function loadUserInfo()
 
     console.log("CURRENT_USER_ID:", CURRENT_USER_ID);
 
-    // sửa đúng field name
     document.getElementById("nguoiDangNhap").innerText =
         user.hoten ||
         user.tendangnhap ||
@@ -145,7 +140,6 @@ async function loadMembers()
         console.log("MEMBERS:", members);
         console.log("CURRENT_USER_ID:", CURRENT_USER_ID);
 
-        // ép string để tránh lệch kiểu
         IS_OWNER =
             members.some(m =>
                 String(m.id_nguoi_dung).trim() === String(CURRENT_USER_ID).trim()
@@ -211,7 +205,6 @@ function renderMembers(members)
     const header =
         document.getElementById("actionHeader");
 
-    // show / hide header
     header.style.display =
         IS_OWNER ? "" : "none";
 
@@ -334,7 +327,7 @@ function searchMember() {
 
         renderMembers(members);
 
-        info.innerHTML = ""; // không hiện gì khi chưa search
+        info.innerHTML = ""; 
 
         return;
 

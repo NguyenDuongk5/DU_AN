@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     CURRENT_PROJECT_ID = projectId;
 
-    // gắn link setting
     const link = document.getElementById("linkChinhSua");
     if (link) {
         link.href = `chinhsuaduan.html?id=${projectId}`;

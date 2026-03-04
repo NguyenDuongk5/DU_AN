@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 
-// ================= USER =================
 
 function loadCurrentUser() {
 
@@ -74,7 +73,6 @@ function loadCurrentUser() {
 }
 
 
-// ================= SIDEBAR =================
 
 function bindSidebar(projectId) {
 
@@ -172,7 +170,6 @@ async function loadProjectDetail(projectId) {
 
 }
 
-// ================= LOAD MY POSTS =================
 
 async function loadMyPosts() {
 
@@ -189,7 +186,6 @@ async function loadMyPosts() {
         const data =
             await res.json();
 
-        // lọc bài của mình
         posts =
             data.filter(
                 p => p.id_tac_gia === currentUserId
@@ -209,7 +205,6 @@ async function loadMyPosts() {
 }
 
 
-// ================= RENDER =================
 
 function renderPosts() {
 
@@ -329,7 +324,6 @@ function editPost(postId)
     document.getElementById("editContent").value =
         post.noi_dung;
 
-    // KHÔNG set value cho input file
     document.getElementById("editImage").value = "";
 
     const modal =
@@ -340,7 +334,6 @@ function editPost(postId)
     modal.show();
 }
 
-// ================= DELETE =================
 
 async function deletePost(postId) {
 
@@ -371,87 +364,7 @@ async function deletePost(postId) {
 
 }
 
-// async function submitEditPost()
-// {
-//     if (!CURRENT_POST)
-//     {
-//         alert("Không có bài viết");
-//         return;
-//     }
 
-//     const title =
-//         document.getElementById("editTitle").value;
-
-//     const content =
-//         document.getElementById("editContent").value;
-
-//     const fileInput =
-//         document.getElementById("editImage");
-
-//     let image =
-//         CURRENT_POST.anh; // giữ ảnh cũ
-
-//     // nếu chọn file mới
-//     if (fileInput.files.length > 0)
-//     {
-//         image =
-//             fileInput.files[0].name;
-//     }
-
-//     const payload =
-//     {
-//         tieu_de: title,
-//         noi_dung: content,
-//         anh: image,
-//         id_du_an: CURRENT_PROJECT_ID,
-//         id_tac_gia: CURRENT_USER_ID,
-//         trang_thai: CURRENT_POST.trang_thai,
-//         ngay_tao: CURRENT_POST.ngay_tao,
-//         ngay_cap_nhat: new Date().toISOString()
-//     };
-
-//     try
-//     {
-//         const res =
-//             await fetch(
-//                 `${API_POST}/${CURRENT_POST.id_bai_dang}`,
-//                 {
-//                     method: "PUT",
-//                     headers:
-//                     {
-//                         "Content-Type": "application/json"
-//                     },
-//                     body: JSON.stringify(payload)
-//                 }
-//             );
-
-//         if (res.ok)
-//         {
-//             alert("Cập nhật thành công");
-
-//             loadMyPosts();
-
-//             bootstrap.Modal.getInstance(
-//                 document.getElementById("editPostModal")
-//             ).hide();
-//         }
-//         else
-//         {
-//             const err =
-//                 await res.text();
-
-//             console.log(err);
-
-//             alert("Cập nhật thất bại");
-//         }
-//     }
-//     catch (err)
-//     {
-//         console.error(err);
-
-//         alert("Không thể kết nối server");
-//     }
-// }
 async function submitEditPost()
 {
     if (!CURRENT_POST)

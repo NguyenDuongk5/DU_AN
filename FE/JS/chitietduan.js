@@ -27,15 +27,11 @@ function isAdmin() {
 
     if (!user) return false;
 
-    // ID admin cố định của bạn
     return user.id_nguoi_dung === "11111111-1111-1121-1111-111111111111";
 
 }
 
 
-// ==========================
-// CHECK USER thường
-// ==========================
 function isUser() {
 
     const user = getCurrentUser();
@@ -71,7 +67,6 @@ function renderSidebar(projectId) {
         console.error("Không tìm thấy sidebar");
         return;
     }
-    // nếu là admin
     if (isAdmin()) {
         createPostBtn.style.display = "none";
         sidebar.innerHTML = `
@@ -105,7 +100,6 @@ function renderSidebar(projectId) {
         return;
     }
 
-    // nếu là user thường
     sidebar.innerHTML = `
         <h5 class="sidebar-title">Thông tin dự án</h5>
 
@@ -163,17 +157,13 @@ document.addEventListener("DOMContentLoaded", () => {
     id = projectId;
     loadUserInfo();
 
-    // render sidebar sau khi có user
     renderSidebar(projectId);
-    // loadUserInfo();
 
-    // load project sau khi có currentUserId
 
     if (!isAdmin()) {
         loadProjectDetail(projectId);
         
     }
-    // loadUserInfo();
 
     loadPosts(projectId);
 
@@ -355,7 +345,6 @@ async function loadPosts(projectId) {
 
         let actionButtons = "";
 
-        // CASE 1: người tạo dự án
         if (isProjectOwner) {
 
             actionButtons = `
@@ -376,7 +365,6 @@ async function loadPosts(projectId) {
 
         }
 
-        // CASE 2: tác giả bài post
         else if (isPostAuthor) {
 
             actionButtons = `
@@ -460,7 +448,6 @@ async function loadPosts(projectId) {
             html
         );
 
-        // load comment cho post này
         loadComments(p.id_bai_dang);
 
     });
@@ -503,7 +490,6 @@ async function saveEditPost() {
     let fileName =
         oldPost.anh;
 
-    // nếu chọn ảnh mới thì upload
     if (fileInput.files.length > 0)
     {
         const formData =
@@ -707,7 +693,6 @@ async function submitComment(e, postId) {
 
 }
 
-// async function createPost() {
 
 //     const title = document.getElementById("postTitle").value;
 //     const content = document.getElementById("postContent").value;

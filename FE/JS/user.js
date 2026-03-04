@@ -55,7 +55,6 @@ function renderProjects(projects) {
         return;
     }
 
-    // Lấy 3 dự án đầu
     const top3 = projects.slice(0, 3);
 
     top3.forEach(p => {
