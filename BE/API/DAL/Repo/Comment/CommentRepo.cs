@@ -15,10 +15,12 @@ namespace DAL.Repo.Comment
     public class CommentRepo : BaseRepo<CommentEntity, CommentDto>, ICommentRepo
     {
         /// <summary>
-        /// 3. Get bình luận theo bài đăng
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Lấy danh sách bình luận theo bài đăng
         /// </summary>
-        /// <param name="PostId"></param>
-        /// <returns></returns>
+        /// <param name="PostId">Id của bài đăng</param>
+        /// <returns>Danh sách bình luận</returns>
         public async Task<IEnumerable<CommentDto>> GetCmtByPostId(Guid PostId)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -46,10 +48,12 @@ namespace DAL.Repo.Comment
         }
 
         /// <summary>
-        /// Insert bình luận
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Thêm bình luận mới
         /// </summary>
-        /// <param name="e"></param>
-        /// <returns></returns>
+        /// <param name="e">Entity bình luận</param>
+        /// <returns>true nếu insert thành công</returns>
         public async Task<bool> Insert(CommentEntity e)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -91,10 +95,12 @@ namespace DAL.Repo.Comment
 
 
         /// <summary>
-        /// 5. Update bình luận
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Cập nhật bình luận
         /// </summary>
-        /// <param name="e"></param>
-        /// <returns></returns>
+        /// <param name="e">Entity bình luận</param>
+        /// <returns>true nếu update thành công</returns>
         public async Task<bool> Update(CommentEntity e)
         {
             using var conn = new MySqlConnection(_connectionString);

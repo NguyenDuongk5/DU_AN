@@ -17,6 +17,9 @@ namespace API.Controllers.Comment
     [Route("api/comment")]
     public class CommentController : BaseController<CommentEntity, CommentDto>
     {
+        /// <summary>
+        /// khai báo service riêng cho comment
+        /// </summary>
         private readonly ICommentService _commentService;
         public CommentController(ICommentService commentService) : base(commentService)
         {
@@ -24,7 +27,9 @@ namespace API.Controllers.Comment
         }
 
         /// <summary>
-        /// Get bình luận theo bài đăng
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API lấy danh sách comment theo PostId
         /// </summary>
         /// <param name="PostId"></param>
         /// <returns></returns>
@@ -35,6 +40,13 @@ namespace API.Controllers.Comment
             return Ok(result);
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API thêm comment
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         [HttpPost]
         public override async Task<IActionResult> Insert([FromBody] CommentEntity entity)
         {
@@ -46,6 +58,14 @@ namespace API.Controllers.Comment
             return Ok(ok);
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API cập nhật thông tin
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="e"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(Guid id, [FromBody] CommentEntity e)
         {

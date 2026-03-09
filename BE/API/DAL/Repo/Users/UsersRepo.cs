@@ -16,8 +16,13 @@ namespace DAL.Repo.Users
 {
     public class UsersRepo : BaseRepo<UsersEntity, UsersDto>, IUsersRepo
     {
-        // Giả sử _connectionString đã được khai báo ở BaseRepo
-
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Lấy danh sách dự án mà user tham gia
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public async Task<List<UserProjectDto>> GetProjectsByUserId(Guid userId)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -56,6 +61,13 @@ namespace DAL.Repo.Users
             return result.AsList();
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Lấy user theo username hoặc email (dùng cho login)
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
         public async Task<UsersEntity> GetByUsername(string username)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -68,6 +80,13 @@ namespace DAL.Repo.Users
             return await conn.QueryFirstOrDefaultAsync<UsersEntity>(sql, new { Username = username });
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm cập nhật mật khẩu 
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public async Task<bool> UpdatePassword(UsersEntity user)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -88,6 +107,13 @@ namespace DAL.Repo.Users
             return result > 0;
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm cập nhật thông tin người dùng
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         public async Task<bool> UpdateUser(UsersEntity entity)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -109,6 +135,15 @@ namespace DAL.Repo.Users
 
             return result >0;
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm Kiểm tra email có tồn tại không
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="currentUserId"></param>
+        /// <returns></returns>
         public async Task<bool> IsEmailExist(string email, Guid currentUserId)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -127,6 +162,14 @@ namespace DAL.Repo.Users
 
             return count > 0;
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Lấy thông tin người dùng theo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<UsersEntity> GetById(Guid id)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -159,6 +202,13 @@ namespace DAL.Repo.Users
 
             return result.ToList();
         }
+
+        /// <summary>
+        /// Hàm duyệt thành viên tham gia dự án
+        /// </summary>
+        /// <param name="idNguoiDung"></param>
+        /// <param name="idDuAn"></param>
+        /// <returns></returns>
         public async Task<bool> ApproveMember(Guid idNguoiDung, Guid idDuAn)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -179,9 +229,14 @@ namespace DAL.Repo.Users
             return rows > 0;
         }
 
-
-
-        // thêm
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 04/03/26
+        /// Hàm xóa user
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public async Task<bool> DeleteUser(Guid id)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -190,27 +245,27 @@ namespace DAL.Repo.Users
 
             try
             {
-                // 1. Xóa hành động và bình luận của người dùng này
+                // Xóa hành động và bình luận của người dùng này
                 await conn.ExecuteAsync("DELETE FROM hanh_dong_nguoi_dung WHERE id_nguoi_dung = @Id", new { Id = id }, transaction);
                 await conn.ExecuteAsync("DELETE FROM binh_luan WHERE id_nguoi_dung = @Id", new { Id = id }, transaction);
 
-                // 2. Xóa bài đăng của người dùng này
+                // Xóa bài đăng của người dùng này
                 await conn.ExecuteAsync("DELETE FROM bai_dang WHERE id_tac_gia = @Id", new { Id = id }, transaction);
 
-                // 3. QUAN TRỌNG: Xóa tất cả thành viên trong các DỰ ÁN mà người này làm chủ sở hữu
+                // Xóa tất cả thành viên trong các DỰ ÁN mà người này làm chủ sở hữu
                 var deleteMembersInOwnedProjectsSql = @"
-            DELETE FROM nguoi_dung_du_an 
-            WHERE id_du_an IN (SELECT id FROM du_an WHERE id_nguoi_tao = @Id)";
+                DELETE FROM nguoi_dung_du_an 
+                WHERE id_du_an IN (SELECT id FROM du_an WHERE id_nguoi_tao = @Id)";
                 await conn.ExecuteAsync(deleteMembersInOwnedProjectsSql, new { Id = id }, transaction);
 
-                // 4. Xóa các liên kết tham gia dự án cá nhân của người này
+                // Xóa các liên kết tham gia dự án cá nhân của người này
                 await conn.ExecuteAsync("DELETE FROM nguoi_dung_du_an WHERE id_nguoi_dung = @Id", new { Id = id }, transaction);
                 await conn.ExecuteAsync("DELETE FROM thanh_vien_du_an WHERE id_nguoi_dung = @Id", new { Id = id }, transaction);
 
-                // 5. Bây giờ mới xóa được Dự án do người này tạo
+                // Xóa dự án do người này tạo
                 await conn.ExecuteAsync("DELETE FROM du_an WHERE id_nguoi_tao = @Id", new { Id = id }, transaction);
 
-                // 6. Cuối cùng xóa Người dùng
+                // Xóa Người dùng
                 var sql = "DELETE FROM nguoi_dung WHERE id_nguoi_dung = @Id";
                 var result = await conn.ExecuteAsync(sql, new { Id = id }, transaction);
 
@@ -223,7 +278,14 @@ namespace DAL.Repo.Users
                 throw new Exception($"Lỗi xóa hệ thống: {ex.Message}");
             }
         }
-
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 25/2/26
+        /// Mở / khóa tk người dùng
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="status"></param>
+        /// <returns></returns>
         public async Task<bool> UpdateStatus(Guid id, int status)
         {
             using var conn = new MySqlConnection(_connectionString);

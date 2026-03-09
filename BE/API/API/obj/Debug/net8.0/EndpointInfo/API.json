@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "API",
-    "version": "v1"
+    "version": "1.0"
   },
   "paths": {
     "/activity/filter": {
@@ -1685,18 +1685,6 @@
         },
         "additionalProperties": false
       }
-    },
-    "securitySchemes": {
-      "Bearer": {
-        "type": "http",
-        "description": "Dán Token vào ?ây (Ví d?: ey...)",
-        "scheme": "bearer"
-      }
     }
-  },
-  "security": [
-    {
-      "Bearer": [ ]
-    }
-  ]
+  }
 }

@@ -10,11 +10,22 @@ namespace API.Controllers.Activity
     [Route("[controller]")]
     public class ActivityController : BaseController<ActivityEntity, ActivityDto>
     {
+        /// <summary>
+        /// Khai bảo service riêng
+        /// </summary>
         private readonly IActivityService _service;
         public ActivityController(IActivityService service) : base(service)
         {
             _service = service;
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API lọc danh sách activity theo userId
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         [HttpGet("filter")]
         public async Task<IActionResult> GetFiltered([FromQuery] Guid? userId)
         {

@@ -15,6 +15,13 @@ namespace DAL.Repo.Project
 {
     public class ProjectRepo : BaseRepo<ProjectEntity, ProjectDto>, IProjectRepo
     {
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Lấy thông tin chi tiết project theo Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<ProjectDto> GetById(Guid id)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -37,6 +44,14 @@ namespace DAL.Repo.Project
 
             return await conn.QueryFirstOrDefaultAsync<ProjectDto>(sql, new { id });
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Cập nhật thông tin project
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public async Task<bool> Update(ProjectEntity e)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -60,13 +75,21 @@ namespace DAL.Repo.Project
 
             return row > 0;
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm người dùng tham gia vào project
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
         public async Task<bool> JoinProject(JoinProjectDto dto)
         {
             using var conn = new MySqlConnection(_connectionString);
 
             await conn.OpenAsync();
 
-            // kiểm tra đã tồn tại chưa
+            // kiểm tra user đã tham gia project chưa
             var existed = await conn.ExecuteScalarAsync<int>(@"
                 SELECT COUNT(*)
                 FROM nguoi_dung_du_an
@@ -77,11 +100,11 @@ namespace DAL.Repo.Project
                     dto.id_du_an,
                     dto.id_nguoi_dung
                 });
-
+            // nếu đã tồn tại thì không cho join lại
             if (existed > 0)
                 return false;
 
-            // insert
+            // thêm user vào project
             var row = await conn.ExecuteAsync(@"
                 INSERT INTO nguoi_dung_du_an
                 (
@@ -107,6 +130,13 @@ namespace DAL.Repo.Project
             return row > 0;
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm tạo project mới
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public async Task<bool> Insert(ProjectEntity e)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -116,29 +146,29 @@ namespace DAL.Repo.Project
 
             try
             {
-                // 1. insert project
+                // thêm project
                 var row = await conn.ExecuteAsync(@"
-            INSERT INTO du_an
-            (
-                id,
-                tieu_de,
-                mo_ta,
-                mau,
-                id_nguoi_tao,
-                ngay_tao,
-                ngay_cap_nhat
-            )
-            VALUES
-            (
-                @id,
-                @tieu_de,
-                @mo_ta,
-                @mau,
-                @id_nguoi_tao,
-                @ngay_tao,
-                @ngay_cap_nhat
-            )
-        ", new
+                    INSERT INTO du_an
+                    (
+                        id,
+                        tieu_de,
+                        mo_ta,
+                        mau,
+                        id_nguoi_tao,
+                        ngay_tao,
+                        ngay_cap_nhat
+                    )
+                    VALUES
+                    (
+                        @id,
+                        @tieu_de,
+                        @mo_ta,
+                        @mau,
+                        @id_nguoi_tao,
+                        @ngay_tao,
+                        @ngay_cap_nhat
+                    )
+                ", new
                 {
                     e.id,
                     e.tieu_de,
@@ -149,7 +179,7 @@ namespace DAL.Repo.Project
                     e.ngay_cap_nhat
                 }, transaction);
 
-                // 2. thêm creator vào nguoi_dung_du_an
+                // Thêm người tạo vào bảng thanh_vien_du_an
                 await conn.ExecuteAsync(@"
                     INSERT INTO nguoi_dung_du_an
                     (
@@ -218,7 +248,7 @@ namespace DAL.Repo.Project
             }
         }
         /// <summary>
-        /// Lay thanh vien du an
+        /// Hàm lấy danh sách thành viên của dự án
         /// </summary>
         /// <param name="projectId"></param>
         /// <returns></returns>
@@ -248,7 +278,14 @@ namespace DAL.Repo.Project
 
             return result.ToList();
         }
-
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm xóa thành viên khỏi dự án
+        /// </summary>
+        /// <param name="idNguoiDung"></param>
+        /// <param name="idDuAn"></param>
+        /// <returns></returns>
         public async Task<bool> RemoveMember(Guid idNguoiDung, Guid idDuAn)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -269,38 +306,42 @@ namespace DAL.Repo.Project
             return row > 0;
         }
 
-
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm lấy dự án theo userId
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public async Task<ProjectDto> GetProjectByIdAndUser(Guid projectId, Guid userId)
         {
             using var conn = new MySqlConnection(_connectionString);
 
             var sql = @"
-        SELECT 
-            d.id,
-            d.tieu_de,
-            d.mo_ta,
-            d.mau,
-            d.id_nguoi_tao,
-            nd.hoten AS ten_nguoi_tao,
-            d.ngay_tao,
-            d.ngay_cap_nhat,
-            nda.vai_tro
-        FROM nguoi_dung_du_an nda
+                SELECT 
+                    d.id,
+                    d.tieu_de,
+                    d.mo_ta,
+                    d.mau,
+                    d.id_nguoi_tao,
+                    nd.hoten AS ten_nguoi_tao,
+                    d.ngay_tao,
+                    d.ngay_cap_nhat,
+                    nda.vai_tro
+                FROM nguoi_dung_du_an nda
 
-        INNER JOIN du_an d 
-            ON nda.id_du_an = d.id
+                INNER JOIN du_an d 
+                    ON nda.id_du_an = d.id
 
-        INNER JOIN nguoi_dung nd 
-            ON d.id_nguoi_tao = nd.id_nguoi_dung
+                INNER JOIN nguoi_dung nd 
+                    ON d.id_nguoi_tao = nd.id_nguoi_dung
 
-        WHERE d.id = @projectId
-          AND nda.id_nguoi_dung = @userId
-    ";
+                WHERE d.id = @projectId
+                  AND nda.id_nguoi_dung = @userId
+            ";
 
-            return await conn.QueryFirstOrDefaultAsync<ProjectDto>(
-                sql,
-                new { projectId, userId }
-            );
+            return await conn.QueryFirstOrDefaultAsync<ProjectDto>(sql,new { projectId, userId });
         }
 
 

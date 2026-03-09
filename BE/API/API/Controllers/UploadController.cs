@@ -15,6 +15,8 @@ namespace API.Controllers
         }
 
         /// <summary>
+        /// ath: NVTDuong
+        /// date: 25/2/26
         /// Upload ảnh từ client
         /// </summary>
         /// <param name="file">file ảnh</param>
@@ -56,7 +58,7 @@ namespace API.Controllers
                     Directory.CreateDirectory(uploadsFolder);
                 }
 
-                // tạo tên file mới (tránh trùng)
+                // tạo tên file mới
                 var newFileName = Guid.NewGuid().ToString() + extension;
 
                 var filePath = Path.Combine(uploadsFolder, newFileName);

@@ -11,6 +11,9 @@ namespace API.Controllers.Member
     [Route("api/member")]
     public class MemberController : BaseController<MemberEntity, MemberDto>
     {
+        /// <summary>
+        /// khai báo service riêng cho member
+        /// </summary>
         private readonly IMemberService _service;
         public MemberController(IMemberService MemberService) : base(MemberService)
         {

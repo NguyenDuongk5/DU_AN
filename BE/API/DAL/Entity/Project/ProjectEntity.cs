@@ -15,7 +15,6 @@ namespace DAL.Entity.Project
         public Guid id { get; set; } = Guid.NewGuid();
         public string tieu_de { get; set; }
         public string mo_ta { get; set; }
-        //public Guid id_nguoi_dung { get; set; }
         public DateTime? ngay_tao { get; set; } = DateTime.Now;
         public DateTime? ngay_cap_nhat { get; set; } = DateTime.Now;
         [NotMapped]

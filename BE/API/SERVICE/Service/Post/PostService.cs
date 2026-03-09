@@ -23,19 +23,42 @@ namespace SERVICE.Service.Post
 
         protected override async Task<List<PostDto>> AfterGetAllData(List<PostDto> data)
         {
+            // sắp xếp bài đăng theo ngày cập nhật mới nhất
             data = data.OrderByDescending(x => x.ngay_cap_nhat).ToList();
             return data;
         }
 
-
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm lấy danh sách bài đăng theo idDuAn
+        /// </summary>
+        /// <param name="idDuAn"></param>
+        /// <returns></returns>
         public async Task<IEnumerable<PostDto>> GetByDuAnId(Guid idDuAn)
         {
             return await _repo.GetByDuAnId(idDuAn);
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm cập nhật thông tin bài đăng
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public async Task<bool> Update(PostEntity e)
         {
             return await _repo.Update(e);
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm thêm mời bài đăng 
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public async Task<bool> Insert(PostEntity e)
         {
             e.id_bai_dang = Guid.NewGuid();
@@ -44,6 +67,15 @@ namespace SERVICE.Service.Post
 
             return await _repo.Insert(e);
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm cập nhật trạng thái bài đăng
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="status"></param>
+        /// <returns></returns>
         public async Task<bool> UpdateStatus(Guid id, int status)
         {
             return await (_repo.UpdateStatus(id, status));

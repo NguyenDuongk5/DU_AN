@@ -13,6 +13,14 @@ namespace DAL.Repo.Post
 {
     public class PostRepo : BaseRepo<PostEntity, PostDto>, IPostRepo
     {
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Lấy danh sách bài đăng theo Id dự án
+        /// </summary>
+        /// <param name="idDuAn">Id dự án</param>
+        /// <returns>Danh sách bài đăng</returns>
+
         public async Task<IEnumerable<PostDto>> GetByDuAnId(Guid idDuAn)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -37,6 +45,14 @@ namespace DAL.Repo.Post
                 ";
             return await conn.QueryAsync<PostDto>(sql, new { IdDuAn = idDuAn });
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Cập nhật bài đăng
+        /// </summary>
+        /// <param name="e">Entity bài đăng</param>
+        /// <returns>true nếu update thành công</returns>
         public async Task<bool> Update(PostEntity e)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -56,7 +72,11 @@ namespace DAL.Repo.Post
 
             return row > 0;
         }
-
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Thêm dự án
+        /// </summary>
         public async Task<bool> Insert(ProjectEntity e)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -98,6 +118,14 @@ namespace DAL.Repo.Post
             return row > 0;
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Hàm thêm bài đăng
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public async Task<bool> Insert(PostEntity e)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -153,6 +181,13 @@ namespace DAL.Repo.Post
 
             return row > 0;
         }
+
+        /// <summary>
+        /// Cập nhật trạng thái bài đăng
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="status"></param>
+        /// <returns></returns>
         public async Task<bool> UpdateStatus(Guid id, int status)
         {
             using var conn = new MySqlConnection(_connectionString);

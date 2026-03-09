@@ -1,4 +1,6 @@
-
+/**
+ * Hàm chạy khi toàn bộ HTMl được load
+ */
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const projectId = urlParams.get('id') || "";
@@ -12,7 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
         loadActivities();     
     }
 });
-
+/**
+ * Gắn link sidebar theo id dự án
+ * @param {*} projectId 
+ */
 function bindAdminSidebar(projectId) {
     const links = {
         "linkTrangChu": `../Trangchung/user.html?id=${projectId}`,
@@ -22,14 +27,16 @@ function bindAdminSidebar(projectId) {
         "linkNhatKy": `nhatkihoatdong.html?id=${projectId}`,
         "linkCaiDat": `chinhsuatk.html?id=${projectId}`
     };
-
+    // Gắn href cho từng link
     for (let id in links) {
         const el = document.getElementById(id);
         if (el) el.href = links[id];
     }
 }
 
-
+/**
+ * Lấy danh sách dự án từ API
+ */
 async function loadProjects() {
     try {
         const res = await fetch("http://localhost:6025/api/project/all");
@@ -39,7 +46,11 @@ async function loadProjects() {
         }
     } catch (err) { console.error("Lỗi tải dự án:", err); }
 }
-
+/**
+ * Render danh sách dự án vào bảng
+ * @param {*} list 
+ * @returns 
+ */
 function renderProjects(list) {
     const tbody = document.getElementById("projectTableBody");
     if (!tbody) return;
@@ -59,16 +70,28 @@ function renderProjects(list) {
         </tr>
     `).join('');
 }
-
+/**
+ * Admin xóa dự án
+ * @param {*} projectId 
+ * @returns 
+ */
 async function adminDeleteProject(projectId) {
     if (!confirm("Bạn chắc chắn muốn xóa dự án này?")) return;
     try {
         const res = await fetch(`http://localhost:6025/api/project/${projectId}`, { method: "DELETE" });
-        if (res.ok) { alert("Xóa dự án thành công"); loadProjects(); }
-    } catch (err) { alert("Lỗi kết nối server"); }
+        if (res.ok) { 
+            alert("Xóa dự án thành công"); 
+            loadProjects(); 
+        }
+    } 
+    catch (err) { 
+        alert("Lỗi kết nối server"); 
+    }
 }
 
-
+/**
+ * Lấy danh sách người dùng từ API
+ */
 async function loadUsers() {
     try {
         const res = await fetch("http://localhost:6025/api/users/all");
@@ -78,15 +101,22 @@ async function loadUsers() {
         }
     } catch (err) { console.error("Lỗi tải người dùng:", err); }
 }
-
+/**
+ * Hiển thị danh sách user vào bảng
+ * @param {*} list 
+ * @returns 
+ */
 function renderUsers(list) {
     const tbody = document.getElementById("userTableBody");
     if (!tbody) return;
     tbody.innerHTML = list.map(u => {
+        // Hiển thị role
         const roleText = u.loai_tai_khoan == 2 ? "Admin" : "Người dùng";
+        // Hiển thị trang thai
         const statusBadge = u.trang_thai === 1 
             ? '<span class="badge bg-success">Hoạt động</span>' 
             : '<span class="badge bg-danger">Đã khóa</span>';
+        // Hiển thị button lock
         const lockBtnClass = u.trang_thai === 1 ? 'btn-warning' : 'btn-success';
         const lockIcon = u.trang_thai === 1 ? 'bi-lock' : 'bi-unlock';
 
@@ -109,6 +139,12 @@ function renderUsers(list) {
     }).join('');
 }
 
+/**
+ * Khóa hoặc mở khóa tài khoản
+ * @param {*} userId 
+ * @param {*} currentStatus 
+ * @returns 
+ */
 async function adminToggleLock(userId, currentStatus) {
     const actionText = currentStatus === 1 ? "khóa" : "mở khóa";
     if (!confirm(`Bạn muốn ${actionText} người dùng này?`)) return;
@@ -117,12 +153,22 @@ async function adminToggleLock(userId, currentStatus) {
         const res = await fetch(`http://localhost:6025/api/users/status/${userId}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
+            // Gửi trạng thái mới
             body: JSON.stringify({ trang_thai: newStatus }) 
         });
-        if (res.ok) { alert(`Đã ${actionText} thành công!`); loadUsers(); }
-    } catch (err) { alert("Lỗi kết nối"); }
+        if (res.ok) {
+            alert(`Đã ${actionText} thành công!`); 
+            loadUsers(); 
+        }
+    } catch (err) { 
+        alert("Lỗi kết nối"); 
+    }
 }
-
+/**
+ * Admin xóa người dùng
+ * @param {*} userId 
+ * @returns 
+ */
 async function adminDeleteUser(userId) {
     if (!confirm("Xóa người dùng này?")) return;
 
@@ -144,6 +190,9 @@ async function adminDeleteUser(userId) {
         alert("Lỗi kết nối: " + err.message);
     }
 }
+/**
+ * Load danh sách user vào dropdown filter
+ */
 async function loadUsersForSelect() {
     try {
         const res = await fetch("http://localhost:6025/api/users/all");
@@ -162,6 +211,10 @@ async function loadUsersForSelect() {
         console.error(err);
     }
 }
+/**
+ * Lấy nhật ký hoạt động từ server
+ * @returns 
+ */
 async function loadActivities() {
     const userId = document.getElementById("userFilterSelect")?.value;
 
@@ -186,6 +239,11 @@ async function loadActivities() {
         console.error(err);
     }
 }
+/**
+ * Hiển thị nhật ký hoạt động
+ * @param {*} list 
+ * @returns 
+ */
 function renderActivities(list) {
     const tbody = document.getElementById("activityTableBody");
     if (!tbody) return;
@@ -203,7 +261,10 @@ function renderActivities(list) {
     }).join('');
 }
 
-
+/**
+ * Đăng xuất hệ thống
+ * @returns
+ */
 async function logout() {
     const raw = localStorage.getItem("currentUser");
     if (raw) {
@@ -220,10 +281,11 @@ async function logout() {
             console.error("Lỗi khi ghi log logout:", err);
         }
     }
-
+    // Xóa session
     localStorage.clear();
     sessionStorage.clear();
+
     window.location.href = "../Trangchung/login.html";
 }
-
+// Cho phép gọi logout từ HTML
 window.logout = logout;

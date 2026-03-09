@@ -13,6 +13,13 @@ public class AuthController : ControllerBase
         _userService = userService;
     }
 
+    /// <summary>
+    /// ath: NVTDuong
+    /// date: 22/2/26
+    /// API đăng ký tài khoản
+    /// </summary>
+    /// <param name="request"></param>
+    /// <returns></returns>
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
@@ -21,6 +28,13 @@ public class AuthController : ControllerBase
         return BadRequest(new { message = result });
     }
 
+    /// <summary>
+    /// ath: NVTDuong
+    /// date: 22/2/26
+    /// API đăng nhập
+    /// </summary>
+    /// <param name="request"></param>
+    /// <returns></returns>
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginRequest request)
     {
@@ -38,11 +52,17 @@ public class AuthController : ControllerBase
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex.Message);
             return StatusCode(500, new { message = ex.Message });
         }
     }
 
+    /// <summary>
+    /// ath: NVTDuong
+    /// date: 22/2/26
+    /// API đổi mật khẩu
+    /// </summary>
+    /// <param name="request"></param>
+    /// <returns></returns>
     [HttpPut("forgot-password")]
     public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequest request)
     {

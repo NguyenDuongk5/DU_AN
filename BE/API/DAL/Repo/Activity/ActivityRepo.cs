@@ -12,7 +12,14 @@ namespace DAL.Repo.Activity
 {
     public class ActivityRepo : BaseRepo<ActivityEntity, ActivityDto>, IActivityRepo
     {
-        // Hàm lấy dữ liệu để hiển thị lên bảng (Có JOIN để lấy tên và email)
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 04/03/26
+        /// Hàm lấy danh sách log kèm thông tin người dùng
+        /// Có JOIN bảng nguoi_dung để lấy họ tên và email
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public async Task<List<UserActivityFullDto>> GetLogsWithUserInfo(Guid? userId)
         {
             using var conn = new MySqlConnection(_connectionString);
@@ -26,7 +33,7 @@ namespace DAL.Repo.Activity
                 FROM hanh_dong_nguoi_dung h
                 JOIN nguoi_dung n ON h.id_nguoi_dung = n.id_nguoi_dung
                 WHERE 1=1";
-
+            // nếu có userId thì lọc log theo user 
             if (userId.HasValue && userId != Guid.Empty)
                 sql += " AND h.id_nguoi_dung = @UserId";
 
@@ -36,10 +43,17 @@ namespace DAL.Repo.Activity
             return result.ToList();
         }
 
-        // Hàm dùng chung để ghi log (Đã sửa lỗi GetConnection)
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 25/02/26
+        /// Hàm ghi log hành động của người dùng
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="action"></param>
+        /// <returns></returns>
         public async Task<bool> InsertLog(Guid userId, string action)
         {
-            using var conn = new MySqlConnection(_connectionString); // Dùng trực tiếp _connectionString từ BaseRepo
+            using var conn = new MySqlConnection(_connectionString);
             var sql = @"INSERT INTO hanh_dong_nguoi_dung (id, id_nguoi_dung, hanh_dong, thoi_gian) 
                         VALUES (@id, @userId, @action, @time)";
 

@@ -16,6 +16,7 @@ namespace SERVICE.Base.IService
         Task<BaseResult> Delete(Guid pkId);
 
         Task<Entity> GetById(Guid id);
+
         //Task<int> Update(Entity entity);
     }
 }

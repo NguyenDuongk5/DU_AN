@@ -9,9 +9,9 @@ namespace DAL.Entity.Activity
     public class UserActivityFullDto
     {
         public Guid id { get; set; }
-        public string? hoten { get; set; }  // Thêm dấu ?
-        public string? email { get; set; }  // Thêm dấu ?
-        public string? hanh_dong { get; set; } // Thêm dấu ?
+        public string? hoten { get; set; }  
+        public string? email { get; set; }  
+        public string? hanh_dong { get; set; }
         public DateTime thoi_gian { get; set; }
     }
 }

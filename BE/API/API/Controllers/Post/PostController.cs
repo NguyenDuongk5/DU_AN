@@ -11,11 +11,21 @@ namespace API.Controllers.Post
     [Route("api/post")]
     public class PostController : BaseController<PostEntity, PostDto>
     {
+        /// <summary>
+        /// khai báo service riêng cho post
+        /// </summary>
         private readonly IPostService _postService;
         public PostController(IPostService postService) : base(postService) { 
             _postService = postService;
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API lấy bài đăng theo idDuAn
+        /// </summary>
+        /// <param name="idDuAn"></param>
+        /// <returns></returns>
         [HttpGet("project/{idDuAn}")]
         public async Task<IActionResult> GetByDuAnId(Guid idDuAn)
         {
@@ -23,6 +33,14 @@ namespace API.Controllers.Post
             return Ok(data);
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API cập nhật bài đăng theo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="e"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(Guid id, [FromBody] PostEntity e)
         {
@@ -37,7 +55,13 @@ namespace API.Controllers.Post
         }
 
 
-
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API thêm bài đăng
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         [HttpPost]
         public override async Task<IActionResult> Insert([FromBody] PostEntity entity)
         {
@@ -48,6 +72,14 @@ namespace API.Controllers.Post
 
             return Ok(ok);
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API cập nhật trạng thái trong bài đăng theo id (Duyệt bài đăng)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpPut("approve/{id}")]
         public async Task<IActionResult> Approve(Guid id)
         {

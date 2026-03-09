@@ -19,6 +19,14 @@ namespace SERVICE.Service.Activity
             _repo = repo;
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// Lấy danh sách log hoạt động của hệ thống 
+        /// Có thể lọc theo UserId (nếu truyền vào)
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public async Task<List<UserActivityFullDto>> GetFilteredLogs(Guid? userId)
         {
             return await _repo.GetLogsWithUserInfo(userId);

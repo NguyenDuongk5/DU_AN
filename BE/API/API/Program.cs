@@ -16,9 +16,7 @@
     using DAL.Repo.Project;
     using DAL.Repo.Role;
     using DAL.Repo.Users;
-    using Microsoft.AspNetCore.Authentication.JwtBearer;
-    using Microsoft.IdentityModel.Tokens;
-    using Microsoft.OpenApi.Models; // Thêm cái này ?? c?u hình Swagger
+    using Microsoft.OpenApi.Models; 
     using SERVICE.Base.IService;
     using SERVICE.Base.Service;
     using SERVICE.IService.Activity;
@@ -37,50 +35,14 @@
     using SERVICE.Service.Project;
     using SERVICE.Service.Role;
     using SERVICE.Service.Users;
-    using System.Text;
+    //using System.Text;
 
     var builder = WebApplication.CreateBuilder(args);
 
     builder.Services.AddControllers();
     builder.Services.AddRouting(opt => opt.LowercaseUrls = true);
-
-    // 1. C?u hình xác th?c JWT
-    builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-        .AddJwtBearer(options => {
-            options.TokenValidationParameters = new TokenValidationParameters
-            {
-                ValidateIssuerSigningKey = true,
-                // S?a trong Program.cs
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Day_La_Chuoi_Key_Sieu_Bao_Mat_Co_Do_Dai_Tren_64_Ky_Tu_De_Tranh_Loi_500_Server_Error_123456")),
-                ValidateIssuer = false,
-                ValidateAudience = false
-            };
-        });
-
     builder.Services.AddEndpointsApiExplorer();
-
-    // 2. C?u hình Swagger ?? h? tr? dán Token (Authorize)
-    builder.Services.AddSwaggerGen(c => {
-        c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
-        c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-        {
-            Description = "Dán Token vào ?ây (Ví d?: ey...)",
-            Name = "Authorization",
-            In = ParameterLocation.Header,
-            Type = SecuritySchemeType.Http,
-            Scheme = "bearer"
-        });
-        c.AddSecurityRequirement(new OpenApiSecurityRequirement {
-            {
-                new OpenApiSecurityScheme {
-                    Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
-                },
-                new string[] {}
-            }
-        });
-    });
-
-    // Dependency Injection (Gi? nguyên c?a b?n)
+    builder.Services.AddSwaggerGen();
     builder.Services.AddScoped(typeof(IBaseRepo<,>), typeof(BaseRepo<,>));
     builder.Services.AddScoped<IPostRepo, PostRepo>();
     builder.Services.AddScoped<IUsersRepo, UsersRepo>();
@@ -104,18 +66,6 @@
     builder.Services.AddScoped<INotificationService, NotificationService>();
     builder.Services.AddScoped<IActivityService, ActivityService>();
 
-    // ===== ADD SERVICES =====
-    //builder.Services.AddCors(options =>
-    //{
-    //    options.AddPolicy("AllowAll",
-    //        policy =>
-    //        {
-    //            policy
-    //                .AllowAnyOrigin()
-    //                .AllowAnyMethod()
-    //                .AllowAnyHeader();
-    //        });
-    //});
     builder.Services.AddCors(options =>
     {
         options.AddPolicy("AllowFrontend",
@@ -129,7 +79,6 @@
             });
     });
 
-    // ===== BUILD =====
     var app = builder.Build();
 
     if (app.Environment.IsDevelopment())
@@ -140,13 +89,9 @@
 
     app.UseHttpsRedirection();
 
-    // ===== ENABLE CORS =====
     //app.UseCors("AllowAll");
     app.UseCors("AllowFrontend");
 
-    // ===== AUTH =====
-    app.UseAuthentication();
-    app.UseAuthorization();
 app.UseStaticFiles();
 app.MapControllers();
     app.Run();

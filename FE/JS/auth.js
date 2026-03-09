@@ -1,5 +1,6 @@
-
-
+/**
+ * Hàm chạy khi toàn bộ HTMl được load
+ */
 document.addEventListener("DOMContentLoaded", () => {
     const loginBtn = document.querySelector(".btn-login");
     if (loginBtn) loginBtn.addEventListener("click", login);
@@ -8,11 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (registerForm) registerForm.addEventListener("submit", registerUser);
 });
 
-
+/**
+ * Hàm đăng nhập
+ * @returns 
+ */
 async function login() {
+    // Lấy dữ liệu từ input 
     const username = document.getElementById("tendangnhap").value.trim();
     const password = document.getElementById("password").value.trim();
-
+    // Kiem tra input
     if (!username || !password) {
         alert("Vui lòng nhập đầy đủ tài khoản và mật khẩu!");
         return;
@@ -54,26 +59,32 @@ async function login() {
     }
 }
 
-
+/**
+ * Hàm đăng ký
+ * @param {*} e 
+ * @returns 
+ */
 async function registerUser(e) {
-    e.preventDefault();
+    e.preventDefault(); // Chặn ng dung submit form
 
+    // Lấy dữ liệu từ input
     const hoten = document.querySelector('[name="fullname"]').value.trim();
     const tendangnhap = document.querySelector('[name="tendangnhap"]').value.trim();
     const email = document.querySelector('[name="email"]').value.trim();
     const matkhau = document.querySelector('[name="password"]').value;
     const repassword = document.querySelector('[name="repassword"]').value;
 
+    // Kiem tra dữ liệu
     if (!hoten || !tendangnhap || !email || !matkhau || !repassword) {
         alert("Vui lòng nhập đầy đủ thông tin");
         return;
     }
-
+    // Kiem tra độ dai mat khau
     if (matkhau.length < 6) {
         alert("Mật khẩu phải >= 6 ký tự");
         return;
     }
-
+    // Kiem tra mat khau va mat khau nhap lai
     if (matkhau !== repassword) {
         alert("Mật khẩu nhập lại không khớp");
         return;
@@ -115,8 +126,11 @@ async function registerUser(e) {
     }
 }
 
-// QUÊN MẬT KHẨU - GỢI Ý MẬT KHẨU
-// hàm che mật khẩu
+/**
+ * Hàm che mật khẩu (chỉ hiện 3 ký tự đầu)
+ * @param {*} password 
+ * @returns 
+ */
 function maskPassword(password) {
 
     if (!password) return "";
@@ -126,6 +140,10 @@ function maskPassword(password) {
 
     return first3 + masked;
 }
+/**
+ * Gợi ý mật khẩu
+ * @returns 
+ */
 async function goiYMatKhau() {
 
     const input = document.getElementById("inputAccount").value.trim();
@@ -137,7 +155,6 @@ async function goiYMatKhau() {
     }
 
     try {
-
         const res = await fetch("http://localhost:6025/api/users/all");
 
         if (!res.ok) {
@@ -173,10 +190,11 @@ async function goiYMatKhau() {
 }
 
 
-// ==============================
-// HIỂN THỊ ALERT
-// ==============================
-
+/**
+ * Hiển thị alert
+ * @param {*} message 
+ * @param {*} type 
+ */
 function showAlert(message, type) {
 
     const alertBox = document.getElementById("alertBox");
@@ -186,6 +204,9 @@ function showAlert(message, type) {
     alertBox.classList.remove("d-none");
 
 }
+/**
+ * Bảo vệ trang chính
+ */
 function protectPage() {
     const user = localStorage.getItem("currentUser");
     if (!user) {
@@ -193,6 +214,9 @@ function protectPage() {
     }
 }
 
+/**
+ * Hàm đăng xuất
+ */
 async function logout() {
     const user = getCurrentUser(); 
     const userId = user?.id_nguoi_dung;
@@ -211,27 +235,26 @@ async function logout() {
     sessionStorage.clear();
     window.location.href = "/HTML/Trangchung/login.html";
 }
+/**
+ * Lấy user hiện tại
+ * @returns 
+ */
 function getCurrentUser() {
-
     const raw = localStorage.getItem("currentUser");
-
     if (!raw) return null;
-
     try {
-
         const data = JSON.parse(raw);
-
         return data.user || data;
-
     } catch {
-
         return null;
-
     }
 
 }
 
-
+/**
+ * Kiem tra nguoi dung la admin
+ * @returns 
+ */
 function isAdmin() {
 
     const user = getCurrentUser();
@@ -242,7 +265,10 @@ function isAdmin() {
 
 }
 
-
+/**
+ * Kiem tra nguoi dung la nguoi dung thuong
+ * @returns 
+ */
 function isUser() {
 
     const user = getCurrentUser();
@@ -252,6 +278,9 @@ function isUser() {
     return !isAdmin();
 
 }
+/**
+ * Tạo sidebar  
+ */
 document.addEventListener("DOMContentLoaded", () => {
 
     if (isAdmin()) {

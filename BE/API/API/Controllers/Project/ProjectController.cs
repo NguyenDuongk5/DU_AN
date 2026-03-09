@@ -15,11 +15,22 @@ namespace API.Controllers.Project
     [Route("api/project")]
     public class ProjectController : BaseController<ProjectEntity, ProjectDto>
     {
+        /// <summary>
+        /// Khai báo service riêng cho project
+        /// </summary>
         private readonly IProjectService _projectService;
         public ProjectController(IProjectService projectService) : base(projectService)
         {
             _projectService = projectService;
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API lấy dự án theo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public override async Task<IActionResult> GetById(Guid id)
         {
@@ -27,6 +38,14 @@ namespace API.Controllers.Project
             return Ok(result);
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API cập nhật dự án theo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(Guid id, [FromBody] ProjectEntity entity)
         {
@@ -38,6 +57,13 @@ namespace API.Controllers.Project
             return Ok(ok);
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API tham gia dự án
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
         [HttpPost("join")]
         public  async Task<IActionResult> JoinProject([FromBody] JoinProjectDto dto)
         {
@@ -51,6 +77,14 @@ namespace API.Controllers.Project
 
             return Ok(new { message = "Join project thành công" });
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API thêm project mới
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         [HttpPost]
         public override async Task<IActionResult> Insert([FromBody] ProjectEntity entity)
         {
@@ -77,12 +111,28 @@ namespace API.Controllers.Project
                 id = entity.id
             });
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API xóa dự án theo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public override async Task<IActionResult> Delete(Guid id)
         {
             var result = await _projectService.DeleteProject(id);
             return Ok(result);
         }
+
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API lấy dang sách thành viên
+        /// </summary>
+        /// <param name="ProjectId"></param>
+        /// <returns></returns>
         [HttpGet("member/{ProjectId}")]
         public async Task<IActionResult> GetMembersByProjectId(Guid ProjectId)
         {
@@ -90,6 +140,14 @@ namespace API.Controllers.Project
             return Ok(data);
         }
 
+        /// <summary>
+        /// ath: NVTDuong
+        /// date: 22/2/26
+        /// API xóa thành viên khỏi dự án
+        /// </summary>
+        /// <param name="idNguoiDung"></param>
+        /// <param name="idDuAn"></param>
+        /// <returns></returns>
         [HttpDelete("member")]
         public async Task<IActionResult> RemoveMember(Guid idNguoiDung, Guid idDuAn)
         {
