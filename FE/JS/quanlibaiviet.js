@@ -1,5 +1,12 @@
-function bindSidebar(projectId) {
+const POST_API = "http://localhost:6025/api/post/project";
 
+let projectId = null; // id dự án hiện tại
+let posts = []; // danh sách bài viết trong dự án
+/**
+ * Gắn link sidebar theo id dự án
+ * @param {*} projectId 
+ */
+function bindSidebar(projectId) {
     document.getElementById("linkTrangChu").href =
         `/HTML/Trangchung/user.html?id=${projectId}`;
 
@@ -16,11 +23,9 @@ function bindSidebar(projectId) {
         `chinhsuaduan.html?id=${projectId}`;
 
 }
-const POST_API = "http://localhost:6025/api/post/project";
-
-let projectId = null;
-let posts = [];
-
+/**
+ * Hàm chạy khi toàn bộ HTMl được load
+ */
 document.addEventListener("DOMContentLoaded", async () => {
 
     const params = new URLSearchParams(window.location.search);
@@ -39,6 +44,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     loadUserInfo();
 
 });
+
+/**
+ * Lấy thống tin người dùng hiện tại
+ * @returns 
+ */
 function loadUserInfo() {
     const raw = localStorage.getItem("currentUser");
     if (!raw) return;
@@ -49,7 +59,11 @@ function loadUserInfo() {
     document.getElementById("nguoiDangNhap").innerText =
         user.hoten || user.tendangnhap || "User";
 }
-
+/**
+ * Lấy thống tin dự án
+ * @param {*} projectId 
+ * @returns 
+ */
 async function loadProjectDetail(projectId) {
     try {
         const res = await fetch(`http://localhost:6025/api/project/${projectId}`);
@@ -80,8 +94,9 @@ async function loadProjectDetail(projectId) {
         alert("Không thể kết nối server");
     }
 }
-
-
+/**
+ * Gán hàm chính sửa, xóa dự án 
+ */
 function bindActions() {
     const btnXoa = document.getElementById("btnXoaDuAn");
     const btnSua = document.getElementById("btnSuaDuAn");
@@ -94,11 +109,11 @@ function bindActions() {
     }
 }
 
-
+/**
+ * Lấy bài viết trong dự án
+ */
 async function loadPosts() {
-
     try {
-
         const res = await fetch(`${POST_API}/${projectId}`);
         if (!res.ok)
             throw new Error("Không thể tải bài viết");
@@ -109,13 +124,14 @@ async function loadPosts() {
 
     }
     catch (err) {
-
         console.error(err);
         alert("Lỗi load bài viết");
-
     }
-
 }
+/**
+ * Hàm render bài viết 
+ * @param {*} posts 
+ */
 function renderPosts(posts) {
 
     const tbody = document.getElementById("postTableBody");
@@ -173,6 +189,10 @@ function renderPosts(posts) {
     });
 
 }
+/**
+ * Hàm xem bài viết
+ * @param {*} index 
+ */
 function viewPost(index) {
 
     const post = posts[index];
@@ -197,13 +217,17 @@ function viewPost(index) {
     modal.show();
 
 }
+/**
+ * Hàm duyệt bài viết
+ * @param {*} postId 
+ * @returns 
+ */
 async function approvePost(postId) {
 
     if (!confirm("Duyệt bài viết này?"))
         return;
 
     try {
-
         const res = await fetch(`http://localhost:6025/api/post/approve/${postId}`, {
             method: "PUT", // hoặc PATCH tùy backend
             headers: {
@@ -220,22 +244,21 @@ async function approvePost(postId) {
 
     }
     catch (err) {
-
         console.error(err);
         alert("Lỗi duyệt bài");
-
     }
-
 }
-
-
+/**
+ * Hàm từ chối bài viết
+ * @param {*} postId 
+ * @returns 
+ */
 async function rejectPost(postId) {
 
     if (!confirm("Từ chối bài viết này?"))
         return;
 
     try {
-
         const res = await fetch(`http://localhost:6025/api/post/reject/${postId}`, {
             method: "PUT",
             headers: {
@@ -252,19 +275,21 @@ async function rejectPost(postId) {
 
     }
     catch (err) {
-
         console.error(err);
         alert("Lỗi từ chối bài");
-
     }
-
-}async function deletePost(postId) {
+}
+/**
+ * Hàm xóa bài viết
+ * @param {*} postId 
+ * @returns 
+ */
+async function deletePost(postId) {
 
     if (!confirm("Bạn có chắc muốn xóa bài viết này?"))
         return;
 
     try {
-
         const res = await fetch(`http://localhost:6025/api/post/${postId}`, {
             method: "DELETE"
         });
@@ -275,13 +300,10 @@ async function rejectPost(postId) {
         alert("Đã xóa bài viết");
 
         await loadPosts();
-
     }
     catch (err) {
-
         console.error(err);
         alert("Lỗi xóa bài viết");
-
     }
 
 }

@@ -1,11 +1,14 @@
 const API_URL = "http://localhost:6025/api/users";
 
-let currentUser = null;
+let currentUser = null; // người dùng hiện tại
 
+/**
+ * Chạy sau khi HTMl dc load
+ */
 document.addEventListener("DOMContentLoaded", () => {
 
     const raw = localStorage.getItem("currentUser");
-
+    // nếu chưa đăng nhập
     if (!raw) {
         window.location.href = "login.html";
         return;
@@ -15,17 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
     currentUser = data.user || data;
 
     const topbar = document.querySelector(".topbar div");
-if (topbar) {
-    topbar.innerHTML =
-        `<i class="bi bi-person-circle"></i> Xin chào, ${currentUser.hoten}`;
-}
+    if (topbar) {
+        topbar.innerHTML =
+            `<i class="bi bi-person-circle"></i> Xin chào, ${currentUser.hoten}`;
+    }
     document.getElementById("fullName").value = currentUser.hoten || "";
     document.getElementById("email").value = currentUser.email || "";
 });
 
-
+/**
+ * Hàm xử lý nút LƯU
+ * @param {*} e 
+ * @returns 
+ */
 async function handleSave(e) {
-    e.preventDefault();
+    e.preventDefault(); // ngăn reload trang
 
     const fullName = document.getElementById("fullName").value.trim();
     const email = document.getElementById("email").value.trim();
@@ -33,7 +40,7 @@ async function handleSave(e) {
     const currentPassword = document.getElementById("currentPassword").value;
     const newPassword = document.getElementById("newPassword").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
-
+    // kiểm tra dữ liệu bắt buộc
     if (!fullName || !email) {
         showAlert("Vui lòng nhập đầy đủ họ tên và email", "danger");
         return;
@@ -50,9 +57,7 @@ async function handleSave(e) {
                 email: email
             })
         });
-
-
-
+        // nếu API lỗi
         if (!res.ok) {
             const err = await res.json();
             showAlert(err.message || "Cập nhật thất bại", "danger");
@@ -63,19 +68,19 @@ async function handleSave(e) {
         currentUser.email = email;
         localStorage.setItem("currentUser", JSON.stringify(currentUser));
 
-
+        // Nếu nhập đổi mật khẩu
         if (currentPassword || newPassword || confirmPassword) {
-
+            // kiểm tra nhập đủ
             if (!currentPassword || !newPassword || !confirmPassword) {
                 showAlert("Vui lòng nhập đầy đủ thông tin đổi mật khẩu", "danger");
                 return;
             }
-
+            // kiểm tra mật khẩu xác nhận
             if (newPassword !== confirmPassword) {
                 showAlert("Mật khẩu xác nhận không khớp", "danger");
                 return;
             }
-
+            
             const passRes = await fetch(`${API_URL}/forgot-password`, {
                 method: "PUT",
                 headers: {
@@ -89,7 +94,7 @@ async function handleSave(e) {
             });
 
             const passResult = await passRes.json();
-
+            // nếu lỗi
             if (!passRes.ok) {
                 showAlert(passResult.message || "Đổi mật khẩu thất bại", "danger");
                 return;
@@ -109,8 +114,11 @@ async function handleSave(e) {
     }
     
 }
-
-
+/**
+ * Hàm hiển thị thống báo lỗi
+ * @param {*} message 
+ * @param {*} type 
+ */
 function showAlert(message, type) {
 
     const oldAlert = document.querySelector(".custom-alert");

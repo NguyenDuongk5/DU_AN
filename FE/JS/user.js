@@ -1,7 +1,13 @@
+/**
+ * Hàm chạy khi toàn bộ HTMl được load
+ */
 document.addEventListener("DOMContentLoaded", () => {
     loadUserProjects();
 });
-
+/**
+ * Hàm lấy danh sách dự án người dùng đã tham gia
+ * @returns 
+ */
 async function loadUserProjects() {
     const raw = localStorage.getItem("currentUser");
 
@@ -45,18 +51,22 @@ async function loadUserProjects() {
     }
 }
 
-
+/**
+ * Hàm render danh sách dự án người dùng
+ * @param {*} projects 
+ * @returns 
+ */
 function renderProjects(projects) {
     const container = document.getElementById("projectList");
     container.innerHTML = "";
-
+    // check xem projects co phai mang hay khong
     if (!projects || projects.length === 0) {
         container.innerHTML = `<p class="text-muted">Bạn chưa có dự án nào.</p>`;
         return;
     }
-
+    // Lấy top 3 dự án
     const top3 = projects.slice(0, 3);
-
+    
     top3.forEach(p => {
         const date = new Date(p.ngay_tao).toLocaleDateString("vi-VN");
 

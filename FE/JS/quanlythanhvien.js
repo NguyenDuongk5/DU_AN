@@ -1,9 +1,15 @@
-const API_URL = "http://localhost:6025/api/project/member";
-let CURRENT_USER_ID = null;
-let IS_OWNER = false;
+const API_URL = "http://localhost:6025/api/project/member"; 
+let CURRENT_USER_ID = null; // id người dùng hiện tại
+let IS_OWNER = false; // kiểm tra người dùng hiện tại là người tạo dự án không
 
-let projectId = null;
-let members = []; 
+let projectId = null; // id dự án hiện tại
+let members = [];  // danh sách người dùng trong dự án
+let projectOwnerId = null; // người tạo dự án 
+let currentUserId = localStorage.getItem("currentUserId"); // id người dùng hiện tại
+/**
+ * Hàm gắn link sidebar theo id dự án
+ * @param {*} projectId 
+ */
 function bindSidebar(projectId) {
 
     document.getElementById("linkTrangChu").href =
@@ -22,6 +28,9 @@ function bindSidebar(projectId) {
         `chinhsuaduan.html?id=${projectId}`;
 
 }
+/**
+ * Hàm chạy khi toàn bộ HTMl được load
+ */
 document.addEventListener("DOMContentLoaded", async () => {
 
     const params = new URLSearchParams(window.location.search);
@@ -43,14 +52,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 });
 
-
-
-
-
-
-let projectOwnerId = null;
-let currentUserId = localStorage.getItem("currentUserId"); 
-
+/**
+ * Hàm lấy thống tin dự án
+ * @param {*} projectId 
+ * @returns 
+ */
 async function loadProjectDetail(projectId) {
     try {
         const res = await fetch(
@@ -89,14 +95,16 @@ async function loadProjectDetail(projectId) {
                 linkDuyet.style.display = "block";
             }
         }
-
     }
     catch (err) {
         console.error(err);
         alert("Không thể kết nối server");
     }
 }
-
+/**
+ * Hàm lấy thống tin người dùng hiện tại
+ * @returns 
+ */
 function loadUserInfo()
 {
     const raw = localStorage.getItem("currentUser");
@@ -125,6 +133,10 @@ function loadUserInfo()
         user.tendangnhap ||
         "User";
 }
+/**
+ * Hàm lấy thống tin người dùng trong dự án
+ * @returns
+ */
 async function loadMembers()
 {
     try
@@ -158,14 +170,17 @@ async function loadMembers()
     }
 }
 
-
+/**
+ * Hàm duyệt người dùng
+ * @param {*} userId 
+ * @returns 
+ */
 async function approveMember(userId) {
 
     if (!confirm("Duyệt thành viên này?"))
         return;
 
     try {
-
         const url =
             `http://localhost:6025/api/users/approve` +
             `?idNguoiDung=${userId}` +
@@ -186,17 +201,16 @@ async function approveMember(userId) {
         alert(data.message || "Đã duyệt thành viên");
 
         await loadMembers();
-
     }
     catch (err) {
-
         console.error(err);
         alert("Lỗi duyệt");
-
     }
-
 }
-
+/**
+ * Hàm render người dùng
+ * @param {*} members 
+ */
 function renderMembers(members)
 {
     const tbody =
@@ -278,9 +292,11 @@ function renderMembers(members)
         tbody.innerHTML += row;
     });
 }
-
-
-
+/**
+ * hàm xóa người dùng
+ * @param {*} userId 
+ * @returns 
+ */
 async function removeMember(userId)
 {
     if (!confirm("Xóa thành viên này khỏi dự án?"))
@@ -312,7 +328,10 @@ async function removeMember(userId)
         alert("Lỗi xóa thành viên");
     }
 }
-
+/**
+ * Hàm tim kiếm người dùng
+ * @returns 
+ */
 function searchMember() {
 
     const keyword = document
@@ -324,13 +343,9 @@ function searchMember() {
     const info = document.getElementById("searchResultInfo");
 
     if (!keyword) {
-
         renderMembers(members);
-
         info.innerHTML = ""; 
-
         return;
-
     }
 
     const filtered = members.filter(member =>
@@ -340,7 +355,5 @@ function searchMember() {
 
     renderMembers(filtered);
 
-    info.innerHTML =
-        `Kết quả tìm kiếm: <b>${filtered.length}</b> / ${members.length} thành viên`;
-
+    info.innerHTML = `Kết quả tìm kiếm: <b>${filtered.length}</b> / ${members.length} thành viên`;
 }

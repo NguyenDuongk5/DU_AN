@@ -16,26 +16,31 @@ function openEditPopup(post) {
 
 }
 
-
+/**
+ * chạy sau khi HTMl dc load
+ */
 document.addEventListener("DOMContentLoaded", async () => {
 
     const params = new URLSearchParams(window.location.search);
 
     projectId = params.get("id");
-
+    // không tìm thấy id dự án
     if (!projectId) {
 
         alert("Không tìm thấy id dự án");
 
         return;
     }
+    // Lưu id dự án 
     CURRENT_PROJECT_ID = params.get("id");
 
+    // Lấy tt người dùng hiện tại
     const user = JSON.parse(localStorage.getItem("currentUser"));
 
     CURRENT_USER_ID = user.id;
 
     loadProjectDetail(projectId);
+
     loadUserInfo();
 
     bindSidebar(projectId);
@@ -46,14 +51,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     
 
 });
-
-
-
+/**
+ * Lấy thông tin user đang đăng nhập
+ * @returns 
+ */
 function loadCurrentUser() {
 
     const raw =
         localStorage.getItem("currentUser");
-
+    // nếu chưa đăng nhập
     if (!raw) {
 
         alert("Bạn chưa đăng nhập");
@@ -61,19 +67,16 @@ function loadCurrentUser() {
         return;
     }
 
-    const data =
-        JSON.parse(raw);
+    const data = JSON.parse(raw);
 
-    const user =
-        data.user || data;
+    const user = data.user || data;
 
-    currentUserId =
-        user.id_nguoi_dung;
-
+    currentUserId = user.id_nguoi_dung;
 }
-
-
-
+/**
+ * Gắn link sidebar theo id dự án
+ * @param {*} projectId 
+ */
 function bindSidebar(projectId) {
 
     document.getElementById("linkTrangChu").href =
@@ -92,6 +95,10 @@ function bindSidebar(projectId) {
         `chinhsuaduan.html?id=${projectId}`;
 
 }
+/**
+ * Hiển thị thông tin người dùng hiện tại
+ * @returns 
+ */
 function loadUserInfo() {
     const raw = localStorage.getItem("currentUser");
     if (!raw) return;
@@ -106,6 +113,11 @@ function loadUserInfo() {
 
 }
 
+/**
+ * Load thông tin chi tiết dự án
+ * @param {*} projectId 
+ * @returns 
+ */
 async function loadProjectDetail(projectId) {
 
     try {
@@ -150,9 +162,8 @@ async function loadProjectDetail(projectId) {
 
         projectOwnerId = p.id_nguoi_tao;
 
-
-        const linkDuyet =
-            document.getElementById("linkDuyetBaiViet");
+        // nếu người dùng hiện tại khác người tạo dự án thì khong hien linkDuyetBaiViet
+        const linkDuyet = document.getElementById("linkDuyetBaiViet");
 
         if (currentUserId !== projectOwnerId) {
 
@@ -169,8 +180,9 @@ async function loadProjectDetail(projectId) {
     }
 
 }
-
-
+/**
+ * Load bài viết của người dùng hiện tại
+ */
 async function loadMyPosts() {
 
     try {
@@ -183,8 +195,7 @@ async function loadMyPosts() {
         if (!res.ok)
             throw new Error("Load fail");
 
-        const data =
-            await res.json();
+        const data = await res.json();
 
         posts =
             data.filter(
@@ -203,16 +214,17 @@ async function loadMyPosts() {
     }
 
 }
-
-
-
+/**
+ * Hiển thị danh sách bài viết
+ * @returns 
+ */
 function renderPosts() {
 
     const container =
         document.getElementById("content");
 
     container.innerHTML = "";
-
+    // nếu không có bài viết
     if (!posts.length) {
 
         container.innerHTML =
@@ -225,19 +237,21 @@ function renderPosts() {
 
         let statusClass = "";
         let statusText = "";
-
+        // chưa duyệt
         if (p.trang_thai == 0) {
 
             statusClass = "pending";
             statusText = "Chờ duyệt";
 
         }
+        // đã duyệt
         else if (p.trang_thai == 1) {
 
             statusClass = "approved";
             statusText = "Đã duyệt";
 
         }
+        // từ chối
         else {
 
             statusClass = "rejected";
@@ -304,7 +318,11 @@ function renderPosts() {
     });
 
 }
-
+/**
+ * Mở modal chỉnh sửa bài viết
+ * @param {*} postId 
+ * @returns 
+ */
 function editPost(postId)
 {
     const post =
@@ -333,8 +351,11 @@ function editPost(postId)
 
     modal.show();
 }
-
-
+/**
+ * Xóa bài viết
+ * @param {*} postId 
+ * @returns 
+ */
 async function deletePost(postId) {
 
     if (!confirm("Bạn có chắc muốn xóa bài viết này?"))
@@ -363,8 +384,10 @@ async function deletePost(postId) {
     }
 
 }
-
-
+/**
+ * Cập nhật bài viết
+ * @returns 
+ */
 async function submitEditPost()
 {
     if (!CURRENT_POST)
@@ -385,7 +408,7 @@ async function submitEditPost()
     let image =
         CURRENT_POST.anh;
 
-    // nếu có chọn ảnh mới → upload
+    // nếu có chọn ảnh mới thì upload
     if (fileInput.files.length > 0)
     {
         const formData =
@@ -411,7 +434,7 @@ async function submitEditPost()
         image =
             uploadData.fileName;
     }
-
+    // gửi dữ liệu lên server
     const payload =
     {
         id_bai_dang:

@@ -1,26 +1,29 @@
-let id = null;
-let posts = [];
-let projectOwnerId = null;
-let currentUserId = null;
+let id = null; // id dự án hiện tại
+let posts = []; // danh sách bài viết trong dự án
+let projectOwnerId = null; // người tạo dự án
+let currentUserId = null; // người dùng hiện tại
+/**
+ * Lấy thống tin người dùng hiện tại
+ * @returns 
+ */
 function getCurrentUser() {
-
     const raw = localStorage.getItem("currentUser");
 
     if (!raw) return null;
 
     try {
-
         const data = JSON.parse(raw);
-
         return data.user || data;
-
-    } catch {
-
+    } 
+    catch {
         return null;
-
     }
 
 }
+/**
+ * Hàm kiểm tra admin
+ * @returns 
+ */
 function isAdmin() {
 
     const user = getCurrentUser();
@@ -28,10 +31,11 @@ function isAdmin() {
     if (!user) return false;
 
     return user.id_nguoi_dung === "11111111-1111-1121-1111-111111111111";
-
 }
-
-
+/**
+ * Hàm kiểm tra người dùng
+ * @returns 
+ */
 function isUser() {
 
     const user = getCurrentUser();
@@ -41,6 +45,10 @@ function isUser() {
     return !isAdmin();
 
 }
+/**
+ * Hàm gắn link sidebar theo id dự án
+ * @param {*} projectId 
+ */
 function bindSidebar(projectId) {
 
     document.getElementById("linkTrangChu").href =
@@ -59,14 +67,21 @@ function bindSidebar(projectId) {
         `chinhsuaduan.html?id=${projectId}`;
 
 }
+/**
+ * Hiển thị sidebar
+ * @param {*} projectId 
+ * @returns 
+ */
 function renderSidebar(projectId) {
 
     const sidebar = document.getElementById("sidebar");
     const createPostBtn = document.getElementById("createPostBtn");
+    // nếu không tìm thấy sidebar
     if (!sidebar)  {
         console.error("Không tìm thấy sidebar");
         return;
     }
+    // nếu là admin thi khóa tạo bài viết
     if (isAdmin()) {
         createPostBtn.style.display = "none";
         sidebar.innerHTML = `
@@ -99,7 +114,7 @@ function renderSidebar(projectId) {
 
         return;
     }
-
+    // nội dung sidebar
     sidebar.innerHTML = `
         <h5 class="sidebar-title">Thông tin dự án</h5>
 
@@ -144,11 +159,14 @@ function renderSidebar(projectId) {
 
     bindSidebar(projectId);
 }
+/**
+ * Hàm chạy khi toàn bộ HTMl được load
+ */
 document.addEventListener("DOMContentLoaded", () => {
 
     const params = new URLSearchParams(window.location.search);
     const projectId = params.get("id");
-
+    // neu khong tim thay id du an
     if (!projectId) {
         alert("Không tìm thấy id dự án");
         return;
@@ -158,8 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadUserInfo();
 
     renderSidebar(projectId);
-
-
+    // neu khong phai admin thi load thong tin du an
     if (!isAdmin()) {
         loadProjectDetail(projectId);
         
@@ -170,7 +187,10 @@ document.addEventListener("DOMContentLoaded", () => {
     bindActions();
 
 });
-
+/**
+ * Hàm lay thong tin nguoi dung hien tai
+ * @returns 
+ */
 function loadUserInfo() {
     const raw = localStorage.getItem("currentUser");
     if (!raw) return;
@@ -183,7 +203,11 @@ function loadUserInfo() {
 
     currentUserId = user.id_nguoi_dung;
 }
-
+/**
+ * Hàm lấy thông tin dự án
+ * @param {*} projectId 
+ * @returns 
+ */
 async function loadProjectDetail(projectId) {
 
     try {
@@ -228,28 +252,22 @@ async function loadProjectDetail(projectId) {
 
         projectOwnerId = p.id_nguoi_tao;
 
+        const linkDuyet = document.getElementById("linkDuyetBaiViet");
 
-        const linkDuyet =
-    document.getElementById("linkDuyetBaiViet");
-
-if (linkDuyet && currentUserId !== projectOwnerId && !isAdmin()) {
-
-    linkDuyet.style.display = "none";
-
-}
+        // nếu không phải admin thi khong hien linkDuyet
+        if (linkDuyet && currentUserId !== projectOwnerId && !isAdmin()) {
+            linkDuyet.style.display = "none";
+        }
     }
     catch (err) {
-
         console.error(err);
-
         alert("Không thể kết nối server");
-
     }
 
 }
-
-
-
+/**
+ * 
+ */
 function bindActions() {
     const btnXoa = document.getElementById("btnXoaDuAn");
     const btnSua = document.getElementById("btnSuaDuAn");
@@ -261,8 +279,10 @@ function bindActions() {
         };
     }
 }
-
-
+/**
+ * Hàm xóa dự án
+ * @returns 
+ */
 async function deleteProject() {
     if (!confirm("Bạn có chắc muốn xóa dự án này không?")) return;
 
@@ -284,7 +304,10 @@ async function deleteProject() {
         alert("Không thể kết nối server");
     }
 }
-
+/**
+ * Hàm cập nhật dự án
+ * @returns 
+ */
 async function updateProject() {
     const newTitle = prompt("Nhập tên dự án mới:");
     if (!newTitle) return;
@@ -315,7 +338,10 @@ async function updateProject() {
         alert("Không thể kết nối server");
     }
 }
-
+/**
+ * Hàm lấy danh sách bài viết
+ * @param {*} projectId 
+ */
 async function loadPosts(projectId) {
 
     const res = await fetch(
@@ -331,9 +357,7 @@ async function loadPosts(projectId) {
 
     const raw = localStorage.getItem("currentUser");
 
-    const currentUser =
-        JSON.parse(raw).user || JSON.parse(raw);
-    console.log("posts:", posts, "currentUser:", currentUser);
+    const currentUser = JSON.parse(raw).user || JSON.parse(raw);
     posts
     .filter(p => p.trang_thai == "1" || isAdmin())
     .forEach(p => {
@@ -344,7 +368,7 @@ async function loadPosts(projectId) {
             currentUser.id_nguoi_dung === p.id_tac_gia;
 
         let actionButtons = "";
-
+        // nếu là admin hoac người tạo dự án
         if (isProjectOwner) {
 
             actionButtons = `
@@ -364,7 +388,7 @@ async function loadPosts(projectId) {
             `;
 
         }
-
+        // nếu là người tạo bài viết
         else if (isPostAuthor) {
 
             actionButtons = `
@@ -384,65 +408,41 @@ async function loadPosts(projectId) {
 
         }
         
-
         const html = `
         <div class="post-card">
-
             <h5 class="post-author d-flex justify-content-between">
-
                 <span>
                     ${p.tieu_de}
                     <span class="badge bg-success ms-2">Duyệt</span>
-                </span>
-
-                ${actionButtons}
-
+                </span> ${actionButtons}
             </h5>
-
             <p class="post-date">
-                ${p.tac_gia}
-                –
-                ${new Date(p.ngay_tao)
-                    .toLocaleDateString("vi-VN")}
+                ${p.tac_gia} – ${new Date(p.ngay_tao).toLocaleDateString("vi-VN")}
             </p>
-
             <p class="post-content">
                 ${p.noi_dung}
             </p>
-
              ${p.anh
                 ? `<img  src="http://localhost:6025/Uploads/${p.anh}"
                     class="img-fluid rounded mb-2" style="max-width: 300px">`
                 : ""}
-
             <h6 class="mt-3 fw-bold">Bình luận</h6>
-
-            <div class="comments mt-2"
-                id="comments-${p.id_bai_dang}">
+            <div class="comments mt-2" id="comments-${p.id_bai_dang}">
                 <p class="text-muted">Chưa có bình luận</p>
             </div>
-
-            <form class="mt-2"
-                onsubmit="submitComment(event,'${p.id_bai_dang}')">
-
+            <form class="mt-2" onsubmit="submitComment(event,'${p.id_bai_dang}')">
                 <div class="d-flex">
-
                     <input
                         class="form-control me-2"
                         placeholder="Nhập bình luận..."
                         required>
-
                     <button class="btn btn-primary">
                         <i class="bi bi-send"></i>
                     </button>
-
                 </div>
-
             </form>
-
         </div>
         `;
-
         container.insertAdjacentHTML(
             "beforeend",
             html
@@ -454,7 +454,10 @@ async function loadPosts(projectId) {
 
 }
 
-
+/**
+ * Hàm sửa bài viết
+ * @param {*} id 
+ */
 function editPost(id) {
 
     const post = posts.find(p => p.id_bai_dang === id);
@@ -469,53 +472,43 @@ function editPost(id) {
 
     modal.show();
 }
-
+/**
+ * Hàm cập nhật bài viết
+ * @returns 
+ */
 async function saveEditPost() {
 
-    const postId =
-        document.getElementById("editPostId").value;
+    const postId = document.getElementById("editPostId").value;
 
-    const oldPost =
-        posts.find(p => p.id_bai_dang === postId);
+    const oldPost = posts.find(p => p.id_bai_dang === postId);
 
-    const title =
-        document.getElementById("editTitle").value;
+    const title = document.getElementById("editTitle").value;
 
-    const content =
-        document.getElementById("editContent").value;
+    const content = document.getElementById("editContent").value;
 
-    const fileInput =
-        document.getElementById("editImage");
+    const fileInput = document.getElementById("editImage");
 
-    let fileName =
-        oldPost.anh;
-
+    let fileName = oldPost.anh;
+    
     if (fileInput.files.length > 0)
     {
-        const formData =
-            new FormData();
-
+        const formData = new FormData();
         formData.append(
             "file",
             fileInput.files[0]
         );
 
-        const uploadRes =
-            await fetch(
-                "http://localhost:6025/api/upload",
-                {
-                    method: "POST",
-                    body: formData
-                }
-            );
+        const uploadRes = await fetch( "http://localhost:6025/api/upload",
+            {
+                method: "POST",
+                body: formData
+            }
+        );
 
-        const uploadData =
-            await uploadRes.json();
-
-        if (uploadData.success)
-        {
-            fileName =
-                uploadData.fileName;
+        const uploadData = await uploadRes.json();
+        // nếu upload thành công thì lấy file name
+        if (uploadData.success){
+            fileName = uploadData.fileName;
         }
         else
         {
@@ -527,40 +520,25 @@ async function saveEditPost() {
     const data =
     {
         id_bai_dang: postId,
-
-        id_du_an:
-            oldPost.id_du_an,
-
-        id_tac_gia:
-            oldPost.id_tac_gia,
-
+        id_du_an: oldPost.id_du_an,
+        id_tac_gia: oldPost.id_tac_gia,
         tieu_de: title,
-
         noi_dung: content,
-
         anh: fileName,
-
-        trang_thai:
-            oldPost.trang_thai
+        trang_thai: oldPost.trang_thai
     };
 
     const res =
-        await fetch(
-            `http://localhost:6025/api/post/${postId}`,
+        await fetch(`http://localhost:6025/api/post/${postId}`,
             {
                 method: "PUT",
-
                 headers:
                 {
-                    "Content-Type":
-                        "application/json"
+                    "Content-Type":"application/json"
                 },
-
-                body:
-                    JSON.stringify(data)
+                body: JSON.stringify(data)
             }
         );
-
     if (res.ok)
     {
         alert("Cập nhật thành công");
@@ -578,6 +556,11 @@ async function saveEditPost() {
         alert("Cập nhật thất bại");
     }
 }
+/**
+ * Hàm xóa bài viết
+ * @param {*} postId 
+ * @returns 
+ */
 async function deletePost(postId) {
 
     if (!confirm("Bạn có chắc muốn xóa bài viết?"))
@@ -593,25 +576,24 @@ async function deletePost(postId) {
         );
 
         if (res.ok) {
-
             alert("Xóa thành công");
-
             loadPosts(id); // reload lại danh sách bài
-
-        } else {
-
+        } 
+        else {
             alert("Xóa thất bại");
-
         }
-
     } catch (err) {
-
         console.error(err);
         alert("Không thể kết nối server");
 
     }
 }
-
+/**
+ * Hàm bình luận 
+ * @param {*} e 
+ * @param {*} postId 
+ * @returns 
+ */
 async function submitComment(e, postId) {
 
     e.preventDefault();
@@ -626,11 +608,8 @@ async function submitComment(e, postId) {
     const raw = localStorage.getItem("currentUser");
 
     if (!raw) {
-
         alert("Bạn chưa đăng nhập");
-
         return;
-
     }
 
     const dataUser = JSON.parse(raw);
@@ -638,225 +617,116 @@ async function submitComment(e, postId) {
     const user = dataUser.user || dataUser;
 
     const comment = {
-
         id_binh_luan: crypto.randomUUID(),
-
         id_bai_dang: postId,
-
         id_nguoi_dung: user.id_nguoi_dung,
-
         noi_dung: noiDung,
-
         ngay_binh_luan: new Date().toISOString(),
-
         trang_thai: 0
-
     };
 
     try {
-
         const res = await fetch(
             "http://localhost:6025/api/comment",
             {
                 method: "POST",
-
                 headers: {
                     "Content-Type": "application/json"
                 },
-
                 body: JSON.stringify(comment)
             }
         );
-
         if (res.ok) {
-
             input.value = "";
-
             // reload comment
             loadComments(postId);
-
         }
         else {
-
             alert("Gửi comment thất bại");
-
         }
-
     }
     catch (err) {
-
         console.error(err);
-
         alert("Không thể kết nối server");
-
     }
 
 }
-
-
-//     const title = document.getElementById("postTitle").value;
-//     const content = document.getElementById("postContent").value;
-//     const image = document.getElementById("postImage").value;
-
-//     const raw = localStorage.getItem("currentUser");
-//     const user = JSON.parse(raw).user || JSON.parse(raw);
-
-//     const data = {
-
-//         id_du_an: id,
-//         id_tac_gia: user.id_nguoi_dung,
-
-//         tieu_de: title,
-//         noi_dung: content,
-//         anh: image,
-
-//         trang_thai: 0
-//     };
-
-//     try {
-
-//         const res = await fetch(
-//             "http://localhost:6025/api/post",
-//             {
-//                 method: "POST",
-//                 headers: {
-//                     "Content-Type": "application/json"
-//                 },
-//                 body: JSON.stringify(data)
-//             }
-//         );
-
-//         if (res.ok) {
-
-//             alert("Đăng bài thành công");
-
-//             loadPosts(id);
-
-//             bootstrap.Modal.getInstance(
-//                 document.getElementById("postModal")
-//             ).hide();
-
-//         } else {
-
-//             alert("Đăng bài thất bại");
-
-//         }
-
-//     } catch (err) {
-
-//         console.error(err);
-//         alert("Không thể kết nối server");
-
-//     }
-// }
-// comment
+/**
+ * Hàm tao bài viết
+ * @returns 
+ */
 async function createPost() {
-
-    const title =
-        document.getElementById("postTitle").value;
-
-    const content =
-        document.getElementById("postContent").value;
-
-    const fileInput =
-        document.getElementById("postImage");
+    const title = document.getElementById("postTitle").value;
+    const content = document.getElementById("postContent").value;
+    const fileInput = document.getElementById("postImage");
 
     let fileName = null;
 
     // nếu có chọn ảnh thì upload trước
     if (fileInput.files.length > 0) {
-
         const formData = new FormData();
-
         formData.append(
             "file",
             fileInput.files[0]
         );
-
-        const uploadRes =
-            await fetch(
-                "http://localhost:6025/api/upload",
-                {
-                    method: "POST",
-                    body: formData
-                }
-            );
-
-        const uploadData =
-            await uploadRes.json();
-
-        if (!uploadData.success) {
-
-            alert("Upload ảnh thất bại");
-            return;
-
-        }
-
-        fileName =
-            uploadData.fileName;
-    }
-
-    const raw =
-        localStorage.getItem(
-            "currentUser"
+        const uploadRes = await fetch( "http://localhost:6025/api/upload",
+            {
+                method: "POST",
+                body: formData
+            }
         );
 
-    const user =
-        JSON.parse(raw).user ||
-        JSON.parse(raw);
+        const uploadData = await uploadRes.json();
+        // nếu upload thành cong thì lấy file name
+        if (!uploadData.success) {
+            alert("Upload ảnh thất bại");
+            return;
+        }
+        fileName = uploadData.fileName;
+    }
 
-    const postData =
-    {
+    const raw = localStorage.getItem( "currentUser");
+
+    const user = JSON.parse(raw).user || JSON.parse(raw);
+
+    const postData = { 
         id_du_an: id,
-
-        id_tac_gia:
-            user.id_nguoi_dung,
-
+        id_tac_gia: user.id_nguoi_dung,
         tieu_de: title,
-
         noi_dung: content,
-
         anh: fileName,
-
         trang_thai: 0
     };
 
-    const res =
-        await fetch(
-            "http://localhost:6025/api/post",
+    const res = await fetch( "http://localhost:6025/api/post",
+        {
+            method: "POST",
+            headers:
             {
-                method: "POST",
-
-                headers:
-                {
-                    "Content-Type":
-                        "application/json"
-                },
-
-                body:
-                    JSON.stringify(postData)
-            }
-        );
+                "Content-Type":
+                "application/json"
+            },
+            body: JSON.stringify(postData)
+}
+    );
 
     if (res.ok)
     {
         alert("Đăng bài thành công");
-
         loadPosts(id);
-
-        bootstrap.Modal
-            .getInstance(
-                document.getElementById("postModal")
-            )
-            .hide();
+        bootstrap.Modal.getInstance( document.getElementById("postModal")).hide();
     }
     else
     {
         alert("Đăng bài thất bại");
     }
 }
+/**
+ * Hàm lấy bình luận theo bài viết
+ * @param {*} postId 
+ * @returns 
+ */
 async function loadComments(postId) {
-
     try {
 
         const res = await fetch(
@@ -868,15 +738,12 @@ async function loadComments(postId) {
 
         const comments = await res.json();
 
-        const container =
-            document.getElementById(`comments-${postId}`);
+        const container = document.getElementById(`comments-${postId}`);
 
         container.innerHTML = "";
 
         if (!comments.length) {
-
-            container.innerHTML =
-                `<p class="text-muted">Chưa có bình luận</p>`;
+            container.innerHTML = `<p class="text-muted">Chưa có bình luận</p>`;
 
             return;
         }
@@ -884,21 +751,14 @@ async function loadComments(postId) {
         const raw = localStorage.getItem("currentUser");
         const user = JSON.parse(raw).user || JSON.parse(raw);
 
-        const post =
-            posts.find(p => p.id_bai_dang === postId);
+        const post = posts.find(p => p.id_bai_dang === postId);
 
         comments.forEach(c => {
-
-            const isAuthor =
-                c.id_nguoi_dung === post.id_tac_gia;
-
-            const isMe =
-                c.id_nguoi_dung === user.id_nguoi_dung;
-
+            const isAuthor = c.id_nguoi_dung === post.id_tac_gia;
+            const isMe = c.id_nguoi_dung === user.id_nguoi_dung;
             const authorBadge = isAuthor
                 ? `<span class="badge bg-primary ms-2">Tác giả</span>`
                 : "";
-
             const actions = isMe
                 ? `
                     <div>
@@ -941,22 +801,20 @@ async function loadComments(postId) {
                 </div>
             `;
 
-            container.insertAdjacentHTML(
-                "beforeend",
-                html
-            );
-
+            container.insertAdjacentHTML( "beforeend", html);
         });
 
     }
     catch (err) {
-
         console.error(err);
-
     }
-
 }
-
+/**
+ * Hàm xóa bình luận
+ * @param {*} commentId 
+ * @param {*} postId 
+ * @returns 
+ */
 async function deleteComment(commentId, postId) {
 
     if (!confirm("Xóa bình luận này?"))
@@ -972,83 +830,62 @@ async function deleteComment(commentId, postId) {
         );
 
         if (res.ok) {
-
             loadComments(postId);
-
         }
         else {
-
             alert("Xóa thất bại");
-
         }
-
     }
     catch (err) {
-
         console.error(err);
-
     }
 
 }
+/**
+ * Hàm sửa bình luận
+ * @param {*} commentId 
+ * @param {*} postId 
+ * @param {*} oldContent 
+ * @returns 
+ */
 async function editComment(commentId, postId, oldContent) {
 
-    const newContent =
-        prompt("Sửa bình luận:", oldContent);
-
+    const newContent = prompt("Sửa bình luận:", oldContent);
+    
     if (!newContent) return;
 
     const raw = localStorage.getItem("currentUser");
 
-    const user =
-        JSON.parse(raw).user || JSON.parse(raw);
+    const user = JSON.parse(raw).user || JSON.parse(raw);
 
     const data = {
-
         id_binh_luan: commentId,
-
         id_bai_dang: postId,
-
         id_nguoi_dung: user.id_nguoi_dung,
-
         noi_dung: newContent,
-
         ngay_binh_luan: new Date().toISOString(),
-
         trang_thai: 0
-
     };
-
     try {
-
-        const res = await fetch(
-            `http://localhost:6025/api/comment/${commentId}`,
+        const res = await fetch( `http://localhost:6025/api/comment/${commentId}`,
             {
                 method: "PUT",
-
                 headers: {
                     "Content-Type": "application/json"
-                },
-
+                }, 
                 body: JSON.stringify(data)
             }
         );
 
         if (res.ok) {
-
             loadComments(postId);
-
         }
         else {
-
             alert("Sửa thất bại");
-
         }
-
     }
     catch (err) {
-
         console.error(err);
-
     }
 
 }

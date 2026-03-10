@@ -1,28 +1,30 @@
-let allProjectsCache = [];
-let currentIndex = 0;
-const PAGE_SIZE = 4;
-let isLoadingMore = false;
-let joinedProjectsMap = new Map();
-let selectedColor = null; 
+let allProjectsCache = []; // danh sách dự án tài liệu
+let currentIndex = 0; // index dự án hiện tại
+const PAGE_SIZE = 4; // số lượng dự án hien thi trong 1 trang
+let isLoadingMore = false; // kiểm tra dự án hien tai dc load chua
+let joinedProjectsMap = new Map(); // danh sách dự án người dùng da tham gia
+let selectedColor = null;  // màu dự án hien tại
+/**
+ * Hàm lay thong tin nguoi dung hien tai
+ * @returns 
+ */
 function getCurrentUser() {
-
     const raw = localStorage.getItem("currentUser");
 
     if (!raw) return null;
 
     try {
-
         const data = JSON.parse(raw);
-
         return data.user || data;
-
-    } catch {
-
+    } 
+    catch {
         return null;
-
     }
-
 }
+/**
+ * Hàm kiem tra admin
+ * @returns 
+ */
 function isAdmin() {
 
     const user = getCurrentUser();
@@ -30,40 +32,39 @@ function isAdmin() {
     if (!user) return false;
 
     return user.id_nguoi_dung === "11111111-1111-1121-1111-111111111111";
-
 }
-
-
+/**
+ * Hàm kiem tra nguoi dung
+ * @returns 
+ */
 function isUser() {
-
     const user = getCurrentUser();
-
     if (!user) return false;
-
     return !isAdmin();
-
 }
+
+/**
+ * Hàm chạy khi toàn bộ HTMl được load 
+ */
 document.addEventListener("DOMContentLoaded", () => {
-
+    // nếu không phái admin thi load thong tin nguoi dung
     if (isAdmin()) {
-
         const section = document.getElementById("myProjectsSection");
-
         if (section)
             section.style.display = "none";
-
     }
     else {
-
         loadUserProjects();
         loadMyCreatedProjects();
-
     }
 
     loadAllProjects();
 
 });
-
+/**
+ * Lấy danh sách dự án người dùng da tham gia
+ * @returns 
+ */
 async function loadUserProjects() {
 
     const raw = localStorage.getItem("currentUser");
@@ -78,12 +79,14 @@ async function loadUserProjects() {
     if (!res.ok) return;
 
     let projects = await res.json();
-
+    // kiểm tra xem projects có phải mảng hay không
     if (!Array.isArray(projects))
         projects = [projects];
 
+    // reset joinedProjectsMap
     joinedProjectsMap.clear();
-
+ 
+    // thêm dữ liệu vào joinedProjectsMap
     projects.forEach(p => {
         joinedProjectsMap.set(p.id_du_an, p.trang_thai);
     });
@@ -93,6 +96,12 @@ async function loadUserProjects() {
     renderProjects(projects, isHome);
 }
 
+/**
+ * Hàm hien thi danh sách dự án
+ * @param {*} projects 
+ * @param {*} isHome 
+ * @returns 
+ */
 function renderProjects(projects, isHome = false) {
 
     const container = document.getElementById("projectList");
@@ -102,10 +111,8 @@ function renderProjects(projects, isHome = false) {
     container.innerHTML = "";
 
     if (!projects || projects.length === 0) {
-
         container.innerHTML =
             `<p class="text-muted">Bạn chưa có dự án nào.</p>`;
-
         return;
     }
 
@@ -123,32 +130,24 @@ function renderProjects(projects, isHome = false) {
         <div class="col-md-4">
             <div class="feature-card"
                  style="border-top:5px solid ${p.mau || "#0d6efd"};">
-
                 <div class="d-flex gap-3">
-
                     <div class="icon-bg">
                         <i class="bi bi-kanban fs-5"></i>
                     </div>
-
                     <div>
-
                         <h6 class="mb-1">
                             ${p.ten_du_an}
                             ${statusBadge}
                         </h6>
-
                         <p class="text-muted small mb-0">
                             ${p.mo_ta || ""}
                         </p>
-
                         <p class="text-muted small mb-0">
                             Ngày tham gia: ${date}
                         </p>
-
                         <p class="text-muted small mb-1">
                             Người tạo: ${p.nguoi_tao}
                         </p>
-
                         ${
                             p.trang_thai == 1
                             ?
@@ -161,18 +160,17 @@ function renderProjects(projects, isHome = false) {
                                 Chờ duyệt
                             </button>`
                         }
-
                     </div>
-
                 </div>
-
             </div>
         </div>`;
-
     });
 
 }
-
+/**
+ * Lấy tất cả dự án
+ * @returns 
+ */
 async function loadAllProjects() {
     try {
         const res = await fetch("http://localhost:6025/api/project/all");
@@ -196,8 +194,10 @@ async function loadAllProjects() {
         alert("Không thể kết nối server");
     }
 }
-
-
+/**
+ * Hàm hiển thị dự án tiep theo
+ * @returns 
+ */
 async function renderNextProjects() {
     if (isLoadingMore) return;
 
@@ -217,32 +217,28 @@ async function renderNextProjects() {
 
         let joinButton = "";
 
-        // ADMIN
+        // nếu là admin
         if (isAdmin()) {
-
             joinButton = `
                 <a href="../Nguoidung/chitietduan.html?id=${p.id}" 
                 class="btn btn-sm btn-primary mt-2">
                 Xem chi tiết
                 </a>
             `;
-
         }
 
-        // USER thường
+        // nếu là người dùng
         else {
-
             const status = joinedProjectsMap.get(p.id);
-
+            // nếu người dùng đã tham gia
             if (status === 1) {
-
                 joinButton = `
                     <button class="btn btn-sm btn-success mt-2" disabled>
                         Đã tham gia
                     </button>
                 `;
-
             }
+            // nếu người dùng chua duyet
             else if (status === 0) {
 
                 joinButton = `
@@ -250,8 +246,8 @@ async function renderNextProjects() {
                         Chờ duyệt
                     </button>
                 `;
-
             }
+            // nếu người dùng chưa tham gia
             else {
 
                 joinButton = `
@@ -262,35 +258,35 @@ async function renderNextProjects() {
                     </button>
                 `;
             }
-
         }
-
         container.innerHTML += `
-        <div class="col-md-4">
-            <div class="feature-card" style="border-top:5px solid ${p.mau || "#0d6efd"};">
-                <div class="d-flex gap-3">
-                    <div class="icon-bg">
-                        <i class="bi bi-kanban fs-5"></i>
-                    </div>
-                    <div>
-                        <h6 class="mb-1">${p.tieu_de}</h6>
-                        <p class="text-muted small mb-0">${p.mo_ta || ""}</p>
-                        <p class="text-muted small mb-1">
-                            Ngày tạo: ${new Date(p.ngay_tao).toLocaleDateString("vi-VN")}
-                        </p>
-                        ${joinButton}
+            <div class="col-md-4">
+                <div class="feature-card" style="border-top:5px solid ${p.mau || "#0d6efd"};">
+                    <div class="d-flex gap-3">
+                        <div class="icon-bg">
+                            <i class="bi bi-kanban fs-5"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">${p.tieu_de}</h6>
+                            <p class="text-muted small mb-0">${p.mo_ta || ""}</p>
+                            <p class="text-muted small mb-1">
+                                Ngày tạo: ${new Date(p.ngay_tao).toLocaleDateString("vi-VN")}
+                            </p>
+                            ${joinButton}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>`;
-
+            </div>`;
     });
 
     currentIndex += PAGE_SIZE;
 
-    loading.classList.add("d-none");
+    loading.classList.add("d-none"); // ẩn loading
     isLoadingMore = false;
 }
+/**
+ * Hàm scroll dự án
+ */
 window.addEventListener("scroll", () => {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
         if (currentIndex < allProjectsCache.length) {
@@ -298,7 +294,10 @@ window.addEventListener("scroll", () => {
         }
     }
 });
-
+/**
+ * Hàm tham gia dự án
+ * @param {*} projectId 
+ */
 function joinProject(projectId) {
     const raw = localStorage.getItem("currentUser");
     const data = JSON.parse(raw);
@@ -320,23 +319,21 @@ function joinProject(projectId) {
         return res.json();
     })
     .then(() => {
-
-    alert("Đã gửi yêu cầu tham gia!");
-
-    joinedProjectsMap.set(projectId, 0);
-
-    const container = document.getElementById("allProjectList");
-    container.innerHTML = "";
-
-    currentIndex = 0;
-
-    renderNextProjects();
-})
-
+        alert("Đã gửi yêu cầu tham gia!");
+        joinedProjectsMap.set(projectId, 0);
+        const container = document.getElementById("allProjectList");
+        container.innerHTML = "";
+        currentIndex = 0;
+        renderNextProjects();
+    })
     .catch(() => alert("Bạn đã tham gia hoặc lỗi"));
 }
-// xử lý chọn màu
+
+/**
+ * Hàm xử lý chọn màu cho dự án
+ */
 document.addEventListener("DOMContentLoaded", () => {
+    // chọn màu
     document.querySelectorAll(".color-box").forEach(c => {
         c.addEventListener("click", () => {
             document.querySelectorAll(".color-box").forEach(x => x.classList.remove("active"));
@@ -345,16 +342,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+/**
+ * Hàm thêm dự án
+ * @returns 
+ */
 async function createProject() {
     const ten = document.getElementById("tenDuAn").value.trim();
     const mota = document.getElementById("moTa").value.trim();
-
-    if (!ten) {
+    // nếu không nhập tên dự án
+    if (!ten) { 
         alert("Nhập tên dự án");
         return;
     }
-
+    
     const raw = localStorage.getItem("currentUser");
+    // nếu chưa đăng nhập
     if (!raw) {
         alert("Chưa đăng nhập");
         return;
@@ -386,27 +389,25 @@ async function createProject() {
         const newProject = await res.json();
 
         alert("Tạo dự án thành công!");
-
-        // 1. Thêm vào ALL PROJECT
+        // thêm dự án vào dự án cơ bản
         allProjectsCache.unshift(newProject);
 
         currentIndex = 0;
         const allContainer = document.getElementById("allProjectList");
+        // nếu dự án cơ bản dc tạo, reload dự án cơ bản
         if (allContainer) {
             allContainer.innerHTML = "";
             renderNextProjects();
         }
 
-        // 2. Reload MY PROJECT (vì creator = participant)
         await loadUserProjects();   
         await loadMyCreatedProjects();
 
-        // 3. Reset form
         document.getElementById("tenDuAn").value = "";
         document.getElementById("moTa").value = "";
         selectedColor = null;
 
-        // 4. Đóng popup
+        // ẩn modal
         const modalEl = document.getElementById("createProjectModal");
         const modal = bootstrap.Modal.getInstance(modalEl);
         if (modal) modal.hide();
@@ -419,8 +420,10 @@ async function createProject() {
         console.error(e);
     }
 }
-
-
+/**
+ * Lấy tất cả dự án cơ bản
+ * @returns 
+ */
 async function loadMyCreatedProjects() {
     const raw = localStorage.getItem("currentUser");
     if (!raw) return;
@@ -435,6 +438,11 @@ async function loadMyCreatedProjects() {
 
     renderMyProjects(myProjects);
 }
+/**
+ * Hàm hiển thị dự án người dùng tạo
+ * @param {*} projects 
+ * @returns 
+ */
 function renderMyProjects(projects) {
     const container = document.getElementById("myProjectList");
     if (!container) return;
